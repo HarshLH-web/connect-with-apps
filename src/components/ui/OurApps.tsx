@@ -39,7 +39,7 @@ const AppsAccordion = () => {
       agentBtnText: "Mimi Agent",
       agentBtnURL: "https://mimiliveagency.com/#agent",
       bgimg: "/our-apps/mimi-bg.webp",
-      imgUrl: "/our-apps/mimi-live.webp",
+      imgUrl: "/our-apps/Mimi-Live.webp",
     },
     {
       title: "POPPO LIVE",
@@ -51,7 +51,7 @@ const AppsAccordion = () => {
       agentBtnURL:
         "https://poppoagencyregistration.com/register/become-poppo-agent",
       bgimg: "/bg.webp",
-      imgUrl: "/Poppo-Live.webp",
+      imgUrl: "/our-apps/Poppo-Live.webp",
     },
     {
       title: "NIKI LIVE",
@@ -74,7 +74,7 @@ const AppsAccordion = () => {
       agentBtnText: "Joyo Agent",
       agentBtnURL: "/blogs/joyo-live-agency",
       bgimg: "/our-apps/joyo-bg.png",
-      imgUrl: "/our-apps/Joyo-logo.png",
+      imgUrl: "/our-apps/joyo-logo.png",
     },
   ];
 

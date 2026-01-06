@@ -1,6 +1,6 @@
-<svg width="1663" height="839" viewBox="0 0 1663 839" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M0 0H1663V838H0V0Z" fill="url(#paint0_linear_3117_47)"/>
-<path d="M0 0H1663V838H0V0Z" fill="black"/>
+<svg width="1719" height="839" viewBox="0 0 1719 839" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 0H1719V838H0V0Z" fill="url(#paint0_linear_3117_47)"/>
+<path d="M0 0H1719V838H0V0Z" fill="black"/>
 <circle opacity="0.58" cx="494.893" cy="271.219" r="9.42432" fill="#D9D9D9"/>
 <rect x="486.285" y="262.58" width="17.2158" height="17.2791" fill="url(#pattern0_3117_47)"/>
 <g clip-path="url(#clip0_3117_47)">
@@ -39,7 +39,7 @@
 <pattern id="pattern5_3117_47" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_3117_47" transform="matrix(0.00113669 0 0 0.00113253 -1.1643 -1.16359)"/>
 </pattern>
-<linearGradient id="paint0_linear_3117_47" x1="831.5" y1="-102.182" x2="831.5" y2="960.717" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_3117_47" x1="859.5" y1="-102.182" x2="859.5" y2="960.717" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0B8F98"/>
 <stop offset="0.950462" stop-color="#3A175F"/>
 </linearGradient>

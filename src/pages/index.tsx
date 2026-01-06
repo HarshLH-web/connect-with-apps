@@ -130,8 +130,9 @@ export default function Home() {
         <Header />
 
         {/* Hero Section */}
-        <section className="bg-[url('/banner-lg.svg')] 2xl:bg-[url('/banner-xl.svg')] bg-no-repeat bg-cover bg-center pt-10 lg:pt-20 flex flex-col lg:flex-row-reverse gap-10 lg:gap-20 items-center justify-center">
-          <div className="w-full lg:w-auto max-w-2xl text-white mt-28 lg:mt-0 px-4 lg:px-0">
+        <section className="bg-[url('/banner-lg.svg')] 2xl:bg-[url('/banner-xl.svg')] bg-no-repeat bg-cover bg-center pt-10 lg:pt-0 flex items-end justify-center min-h-[90vh]">
+         <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-20 items-center justify-center">
+         <div className="w-full lg:w-auto max-w-3xl text-white mt-28 lg:mt-0 px-4 lg:px-0">
             <h1 className="text-4xl lg:text-6xl font-bold text-center lg:text-left">
             Connect Agency Where Talent Meets Opportunity
 
@@ -147,9 +148,10 @@ export default function Home() {
               text="Explore Our Services"
             />
           </div>
-          <div className="w-full lg:w-auto max-w-xl">
-            <Image src="/hero-img.webp" alt="Home" width={500} height={500} className="w-60 mx-auto lg:mx-0 lg:w-full lg:h-full object-cover" />
+          <div className="w-full lg:w-auto max-w-2xl">
+            <Image src="/hero-img.webp" alt="Home" width={500} height={500} className="w-60 mx-auto lg:mx-0 lg:w-[30rem] lg:h-full object-contain" />
           </div>
+         </div>
         </section>
 
         {/* Services Section */}
