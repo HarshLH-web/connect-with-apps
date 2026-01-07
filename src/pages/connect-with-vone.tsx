@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Link from "next/link";
 
 const ConnectWithVone: NextPage = () => {
   return (
@@ -1065,10 +1066,29 @@ const ConnectWithVone: NextPage = () => {
             solely by the platform and depend on performance and policy
             compliance.<br /><br />
             Address: Omaxe Green Meadow City Bhiwadi, Rajasthan 301019
-          </p>
+            <br />          </p>
+            Contact: <a href="https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0">+91 8448877709</a>
+            <br />
+            Email: <a href="mailto:support@connectwithapps.com">support@connectwithapps.com</a>
+
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
+
+      <footer className="bg-white text-black w-full">
+        <div className="w-[90%] mx-auto max-w-7xl pt-4 lg:pt-6 pb-4 lg:pb-6">
+          <div className="flex flex-col md:flex-row items-center my-auto justify-between">
+            <div className="">
+              <Image src="/logo.png" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
+            </div>
+            <div className="text-left text-black flex flex-col md:flex-row gap-3">
+              <Link href="/privacy-policy" className="text-sm text-gray-600">Privacy Policy</Link>
+              <Link href="/terms-and-conditions" className="text-sm text-gray-600">Terms of Service</Link>
+              <Link href="/contact-us" className="text-sm text-gray-600">Contact Us</Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

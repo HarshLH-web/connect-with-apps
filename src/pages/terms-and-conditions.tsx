@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+// import Footer from "@/components/layout/Footer";
 
 export default function TermsAndConditions() {
   return (
@@ -8,7 +8,7 @@ export default function TermsAndConditions() {
     <div>
         <h1>Terms And Conditions</h1>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
