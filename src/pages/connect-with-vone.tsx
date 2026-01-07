@@ -36,8 +36,8 @@ const ConnectWithVone: NextPage = () => {
         }}
       >
         <div className="container mx-auto px-4 pt-8 pb-12 sm:px-8 lg:px-8 lg:py-20 my-auto flex justify-center items-center">
-          <div className="flex flex-col md:flex-row justify-center items-center h-auto md:px-8 lg:px-8 lg:gap-0 w-full lg:w-full mx-auto pt-24 md:pt-16">
-            <div className="mb-0 md:flex-1 xl:flex-none xl:px-16 md:mt-16 xl:mt-0 order-2 md:order-1">
+          <div className="flex flex-col md:flex-row justify-center items-center h-auto md:px-8 lg:px-0 lg:gap-0 w-full lg:w-full mx-auto pt-24 md:pt-16">
+            <div className="mb-0 md:flex-1 xl:flex-none xl:px-16 md:mt-6 xl:mt-0 order-2 md:order-1">
               <Image
                 src="/vone-images/vone-main-mobile.webp"
                 alt="Vone Agency Registration"
@@ -118,7 +118,8 @@ const ConnectWithVone: NextPage = () => {
         </div>
       </main>
 
-      <div className="w-full flex flex-col items-center justify-center py-8 lg:py-10 vone-bg">
+    
+      <div className="w-full flex flex-col items-center justify-center py-8 lg:py-7 vone-bg">
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-center w-[90%] max-w-5xl mx-auto text-white">
           <p className="text-2xl lg:text-3xl 2xl:text-3xl font-semibold text-center">
             Download Poppo
@@ -156,12 +157,13 @@ const ConnectWithVone: NextPage = () => {
         </div>
       </div>
 
-      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-lg w-full">
-        <p>
+      <div className="bg-[#ffffff] text-[#ff0000] text-center py-2 px-4 font-semibold text-sm lg:text-lg w-full border-b border-[#8e8e8e]">
+        <p className="">
           DISCLAIMER: This is an independent talent agency website and is NOT
           the official Vone App platform.
         </p>
       </div>
+
 
       <section id="about" className="bg-gray-50 scroll-mt-16 pt-6">
         <div className="container mx-auto">
