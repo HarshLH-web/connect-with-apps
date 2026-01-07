@@ -42,8 +42,8 @@ const ConnectWithVone: NextPage = () => {
                 src="/vone-images/vone-main-mobile.webp"
                 alt="Vone Agency Registration"
                 className="w-full h-full aspect-auto"
-                width={1080}
-                height={1920}
+                width={3000}
+                height={3000}
               />
             </div>
 
