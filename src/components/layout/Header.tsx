@@ -131,7 +131,7 @@ function Header() {
         Home
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
-      <Link href="/about-talent-agency" className="text-base hover:text-gray-400 font-medium" onClick={() => setIsMenuOpen(false)}>
+      <Link href="/about-us" className="text-base hover:text-gray-400 font-medium" onClick={() => setIsMenuOpen(false)}>
         About
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
@@ -281,7 +281,7 @@ function Header() {
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#353D76] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <div className="h-6 w-px bg-[#353d7688]"></div>
-          <Link href="/about-talent-agency" className={`text-base font-medium relative group transition-all duration-300 ${pathname === '/about-talent-agency' ? 'text-[#000000]' : 'text-[#7b7b7b]'}`}>
+          <Link href="/about-us" className={`text-base font-medium relative group transition-all duration-300 ${pathname === '/about-us' ? 'text-[#000000]' : 'text-[#7b7b7b]'}`}>
             <span>About</span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#353D76] group-hover:w-full transition-all duration-300"></span>
           </Link>

@@ -57,3 +57,13 @@
 
 /* Vone Connect With Vone Page Styles start */
 /* Vone Connect With Vone Page Styles end */
+
+
+/* About Us Page Styles start */
+.about-us-bg{
+  background: url('/vission-bg-xl.png'), linear-gradient(180deg, #0B8F98 0%, #3A175F 100%);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+/* About Us Page Styles end */

@@ -21,7 +21,7 @@ function Footer() {
     <footer className="bg-[#ffffff] text-black pt-10 pb-5">
       <div className="w-full lg:w-full max-w-360 mx-auto flex flex-col lg:flex-row lg:justify-center gap-8 px-6 lg:px-0 xl:px-6">
         {/* Contact Section - First on mobile */}
-        <div className='order-1 lg:order-3 lg:pb-12 lg:w-[30%]'>
+        <div className='order-1 lg:order-3 lg:pb-12 lg:w-[30%] xl:w-[25%]'>
         <div className="">
             
           <p className="text-2xl font-bold mb-2 lg:mb-4">Contact Us</p>
@@ -56,7 +56,7 @@ function Footer() {
             <div className="space-y-1.5 flex flex-col">
               <Link href="/" className="text-gray-900 block md:inline transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300">Home</Link>
               {/* <div className="h-px bg-[#242424]"></div> */}
-              <Link href="/about-talent-agency" className="text-gray-900 block md:inline transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300">About Us</Link>
+              <Link href="/about-us" className="text-gray-900 block md:inline transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300">About Us</Link>
               {/* <div className="h-px bg-[#242424]"></div> */}
               <Link href="/blogs" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Blogs</Link>
               {/* <div className="h-px bg-[#242424]"></div> */}
@@ -68,11 +68,13 @@ function Footer() {
             <div className="space-y-1.5 flex flex-col mt-2 lg:mt-0">
               {/* <a href="/register-influencer" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Register as Influencer</a>
               <div className="h-px bg-[#242424]"></div> */}
-              <Link href="/live-streaming-tips" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Streaming Tips</Link>
               {/* <div className="h-px bg-[#242424]"></div> */} 
-              <Link href="/asked-questions" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">FAQs</Link>
+              {/* <Link href="/asked-questions" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">FAQs</Link> */}
               {/* <div className="h-px bg-[#242424]"></div> */} 
               <Link href="/customer-support" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Support</Link>
+              <Link href="/contact-us" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Contact Us</Link>
+              <Link href="/terms-and-conditions" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Terms And Conditions</Link>
+              <Link href="/privacy-policy" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Privacy Policy</Link>
               {/* <div className="h-px bg-[#242424]"></div>
               <Link href="/streaming-tips" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Streaming Tips</Link> */}
             </div>
@@ -80,7 +82,7 @@ function Footer() {
         </div>
 
         {/* Blog Links Section - Third on mobile */}
-        <div className="order-3 lg:order-2 pb-12 whitespace-nowrap lg:w-[30%]">
+        <div className="order-3 lg:order-2 pb-12 whitespace-nowrap xl:pl-12 lg:w-[30%]">
           <p className="text-2xl font-semibold mb-2 lg:mb-4">Blog</p>
           {/* <div className="w-6 h-0.5 bg-white mx-2 mb-4"></div> */}
 
@@ -101,7 +103,7 @@ function Footer() {
       {/* Copyright and Social Links - Last on both mobile and desktop */}
       <div className="border bg-[#F8ECEE] border-[#00000087] py-4 text-center lg:text-left flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center order-4 w-[90%] sm:w-[95%] max-w-360 mx-auto px-2 lg:px-6 rounded-2xl">
         <div className="flex items-center gap-2 lg:gap-4">
-        <Image src="/logo.png" alt="Connect With Apps" width={200} height={200} />
+        <Image src="/logo.png" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
         <div className='w-px h-8 bg-black/25 hidden lg:block'></div>
             <p className="text-sm text-gray-900 hidden lg:block">
             &copy; 2026 Connect With Apps. All rights reserved.

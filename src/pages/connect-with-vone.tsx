@@ -1,16 +1,12 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const ConnectWithVone: NextPage = () => {
   return (
     <>
-      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base z-50 fixed top-0 left-0 w-full">
-        <p>
-          DISCLAIMER: This is an independent talent agency website and is NOT
-          the official Vone App platform.
-        </p>
-      </div>
-
+    <Header />
       <div
         className="fixed bottom-8 left-8 z-100 opacity-0 transform translate-y-6 transition-all duration-500 ease-out mix-blend-luminosity"
         id="scrollTopBtnContainer"
@@ -55,7 +51,7 @@ const ConnectWithVone: NextPage = () => {
                 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 md:text-left"
                 style={{ minHeight: "2.5rem" }}
               >
-                Vone App Agency
+                Connect With Vone
               </h1>
               <p
                 className="mb-2 md:mb-4 text-[1rem] leading-tight md:text-md lg:text-xl md:text-left"
@@ -157,6 +153,13 @@ const ConnectWithVone: NextPage = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-lg w-full">
+        <p>
+          DISCLAIMER: This is an independent talent agency website and is NOT
+          the official Vone App platform.
+        </p>
       </div>
 
       <section id="about" className="bg-gray-50 scroll-mt-16 pt-6">
@@ -645,7 +648,7 @@ const ConnectWithVone: NextPage = () => {
           <Image
             src="/vone-images/Vone-commission table.svg"
             alt="Vone Agency Commission Structure"
-            className="w-full mx-auto my-6 lg:my-8"
+            className="w-full mx-auto my-6 lg:my-8 max-w-4xl"
             width={1000}
             height={500}
           />
@@ -1065,6 +1068,7 @@ const ConnectWithVone: NextPage = () => {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
