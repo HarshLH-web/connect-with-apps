@@ -29,18 +29,18 @@ function Footer() {
         <div className="flex flex-col gap-2 lg:gap-3 h-full">
             <div className="flex items-center gap-2">
                     <Image src="/whatsapp.svg" alt="whatsapp" className="w-6 h-6" width={20} height={20} />
-                    <p className="text-gray-900 flex items-start gap-2">+91 7065384660</p>
+                    <p className="text-gray-900 flex items-start gap-2">+91 8448877709</p>
             </div>
 
             
             <div className="flex items-center gap-2">
                 <Image src="/mail.svg" alt="Email" className="w-6 h-6" width={20} height={20} />
-                <p className="text-gray-900 flex items-start gap-2">support@lhtalentagency.com</p>
+                <p className="text-gray-900 flex items-start gap-2">support@connectwithapps.com</p>
             </div>
             
             <div className="flex items-start gap-2">   
                 <Image src="/location.svg" alt="Phone" className="w-6 h-6" width={20} height={20} />
-                <p className="text-gray-900 flex items-start gap-2">RZF-370, Doctor Lohiya Marg,<br /> NEAR PANDIT CHOWK, Raj Nagar 2,<br /> New Delhi, Delhi 110077, India</p>
+                <p className="text-gray-900 flex items-start gap-2">Omaxe Green Meadow City Bhiwadi, <br />Rajasthan 301019</p>
             </div>
           
           </div>

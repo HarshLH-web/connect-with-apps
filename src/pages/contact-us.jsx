@@ -107,7 +107,7 @@ function Support() {
       <meta name="description" content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime." />
       <meta name="keywords" content="LH Talent - Customer Support, LH Talent Agency - Contact Number" />
       {/* <!-- Facebook Meta Tags --> */}
-      <meta property="og:url" content="https://lhtalentagency.com/customer-support" />
+      <meta property="og:url" content="https://connectwithapps.com/customer-support" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Customer Support | LH Talent Agency: We are here to Help" />
       <meta property="og:site_name" content="LH Talent Agency" />
@@ -116,13 +116,13 @@ function Support() {
 
       {/* <!-- Twitter Meta Tags --> */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="lhtalentagency.com" />
-      <meta property="twitter:url" content="https://lhtalentagency.com/customer-support" />
+      <meta property="twitter:domain" content="connectwithapps.com" />
+      <meta property="twitter:url" content="https://connectwithapps.com/customer-support" />
       <meta name="twitter:title" content="Customer Support | LH Talent Agency: We are here to Help" />
       <meta name="twitter:description" content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime." />
       <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://lhtalentagency.com/customer-support" />
+      <link rel="canonical" href="https://connectwithapps.com/customer-support" />
     </Head>
     <Header />
     <div className='contact-bg'>
@@ -282,9 +282,9 @@ function Support() {
 
         <h3 className='text-2xl lg:text-4xl text-[#DE0402] font-bold text-center'>9:30AM - 5:30PM IST</h3>
 
-        <a href='https://api.whatsapp.com/send/?phone=7065384660&text&type=phone_number&app_absent=0' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> +917065384660</a>
+        <a href='https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> +918448877709</a>
 
-        <a href='mailto:support@lhtalentagency.com' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> support@lhtalentagency.com</a>
+        <a href='mailto:support@connectwithapps.com' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> support@connectwithapps.com</a>
       </div>
       <Footer />
     </>
