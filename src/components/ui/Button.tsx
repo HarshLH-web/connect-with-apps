@@ -1,20 +1,20 @@
 export interface ButtonProps {
-  className: string;
+  className?: string;
   isArrow?: boolean;
   link: string;
   text: string;
 }
 
 export const Button = ({
-  className,
   isArrow = false,
   link,
   text,
+  className,
 }: ButtonProps) => {
   return (
     <a
       href={link}
-      className={className}
+      className={`btn-hover flex items-center gap-2 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full transition-all duration-300 mt-4 w-fit ${className} text-base lg:text-lg`}
       target="_blank"
       rel="noopener noreferrer"
     >

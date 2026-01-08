@@ -97,19 +97,19 @@ export default function Home() {
       title: "Talent Recruitment",
       description:
         "We find and grow talented creators for top live streaming and video calling apps. Whether it’s singing, dancing, or chatting, we provide the platform to help you become a social star.",
-      image: "/service-1.webp",
+      image: "/service-1.png",
     },
     {
       title: "Agent Training",
       description:
         "Great streamers need great managers. We recruit and train agents to lead their own teams. We provide tools, guidance and support needed to mentor talent and build a successful business.",
-      image: "/service-2.webp",
+      image: "/service-2.png",
     },
     {
       title: "Career Management",
       description:
         "We don't just recruit, we build your future. We offer personalized live streaming services and expert strategies to turn your passion into a profitable, long-term career.",
-      image: "/service-3.webp",
+      image: "/service-3.png",
     },
   ];
 
@@ -134,7 +134,7 @@ export default function Home() {
             </p>
             <Button
               link="/our-apps"
-              className="bg-[#353D76] flex items-center gap-2 text-white px-4 py-2 rounded-full border border-white hover:bg-white hover:text-[#353D76] hover:border-[#353D76] transition-all duration-300 mt-4 w-fit mx-auto lg:mx-0"
+              className="mx-auto lg:mx-0"
               isArrow={true}
               text="Explore Our Services"
             />
@@ -154,28 +154,30 @@ export default function Home() {
               {services.map((service) => (
                 <div
                   key={service.title}
-                  className="flex flex-col items-center justify-center text-center bg-white px-4 lg:px-6 rounded-[10px_6rem_0_0] relative pt-36 pb-6 lg:pb-8"
-                >
+                  className="flex flex-col items-center justify-start text-center bg-white rounded-[24px] overflow-hidden"
+                > 
+                <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={500}
+                    height={500}
+                    className="w-full"
+                  />
+                  <div className="p-6">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2 lg:mb-2 leading-tight">
                     {service.title}
                   </h3>
                   <p className="text-base lg:text-[17px] text-[#626262] lg:leading-snug">
                     {service.description}
                   </p>
-                  <Image
-                    src="/service.png"
-                    alt={service.title}
-                    width={500}
-                    height={500}
-                    className="absolute top-[-75px] max-w-72 right-1/2 translate-x-1/2"
-                  />
+                  </div>
+                 
                 </div>
               ))}
             </div>
 
             <Button
               link="/our-apps"
-              className="bg-[#353D76] flex items-center gap-2 text-white px-4 py-2 rounded-full border border-white hover:bg-white hover:text-[#353D76] hover:border-[#353D76] transition-all duration-300 mt-4"
               isArrow={true}
               text="Explore Our Services"
             />
@@ -204,7 +206,6 @@ export default function Home() {
             </p>
             <Button
               link="/our-apps"
-              className="bg-[#353D76] flex items-center gap-2 text-white px-4 py-2 rounded-full border border-white hover:bg-white hover:text-[#353D76] hover:border-[#353D76] transition-all duration-300 mt-4"
               isArrow={true}
               text="Connect Now"
             />

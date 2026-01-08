@@ -250,7 +250,7 @@ function Header() {
 
       {/* Apply Now Button */}
       <button
-        className="bg-[#353D76] text-white rounded-full font-medium "
+        className="btn-hover text-white rounded-full font-medium "
         onClick={() => setIsMenuOpen(false)}
       >
         <Link href="/apply-now" className="flex items-center gap-2 py-3 px-6">
@@ -373,7 +373,7 @@ function Header() {
 
           
           {/* Apply Now Button */}
-            <Link href="/apply-now" className="py-2 xl:py-2 px-6 bg-[#353D76] hover:bg-white text-white hover:text-[#353D76] rounded-full font-medium flex items-center gap-2 transition duration-300 border-2 border-[#353D76]">
+            <Link href="/apply-now" className="btn-hover py-2 xl:py-2 px-6 text-white rounded-full font-medium flex items-center gap-2 transition duration-300">
             Apply Now
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 
 const ConnectWithVone: NextPage = () => {
@@ -219,128 +218,47 @@ const ConnectWithVone: NextPage = () => {
                   <span className="text-blue-800"> Become Vone Agent</span>
                   <div className="hidden md:block w-[75px] h-[5px] bg-blue-700 mt-8 rounded-full" />
                 </h2>
-                <ul className="text-left list-disc pl-2 text-[1rem] leading-tight md:text-lg">
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>
-                      {" "}
+                <ul className="text-left list-decimal pl-4 text-[1rem] leading-tight md:text-lg space-y-1">
+                  <li  >
                       <a
                         href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
                         className="underline text-blue-700 font-semibold"
                       >
                         Download the Vone App
                       </a>
-                    </span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>Register &amp; Sign-in using your preferred option</span>
+                  <li  >
+                  Register &amp; Sign-in using your preferred option.
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>Copy Vone ID from your profile</span>
+                  <li  >
+                  Copy Vone ID from your profile.
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>
-                      Click on the{" "}
+                  <li  >
+                  Click on the
                       <a
                         href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone"
                         className="underline text-blue-700 font-semibold"
                       >
-                        Agency Registration Link{" "}
+                        Agency Registration Link
                       </a>
-                    </span>
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>
-                      Enter your Vone ID &amp; Click <strong>“Get”</strong>
-                    </span>
+                  <li  >
+                  Enter your Vone ID &amp; Click <strong>“Get”</strong>
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>Find the verification code in your App messages</span>
+                  <li  >
+                  Find the verification code in your App messages.
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>Enter the Verification Code and Submit</span>
+                  <li  >
+                  Enter the Verification Code and Submit.
                   </li>
 
-                  <li className="flex items-start gap-2">
-                    <span>
-                      <Image
-                        src="/vone-images/tic.svg"
-                        className="max-h-5 max-w-5 mt-2"
-                        alt="tic-image"
-                        width={20}
-                        height={20}
-                      />
-                    </span>
-                    <span>
-                      Await agency approval (usually 10-15 minutes)
-                    </span>
+                  <li  >
+                  Await agency approval (usually 10-15 minutes).
                   </li>
                 </ul>
                 <p className="m-2 md:mb-4 text-[1rem] leading-tight md:text-lg lg:text-xl">
@@ -549,13 +467,13 @@ const ConnectWithVone: NextPage = () => {
       <section className="py-8 lg:pt-16 lg:pb-24">
         <div className="container mx-auto px-4">
           <div className="w-full mx-auto mt-8">
-            <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div className="flex flex-col md:flex-row gap-8 lg:gap-2 2xl:gap-8 justify-center items-center">
               <div className="flex flex-col items-center">
                 <Image
                   src="/vone-images/live.webp"
                   alt="Go Live"
                   loading="lazy"
-                  className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain"
+                  className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain lg:min-w-64 2xl:min-w-auto"
                   width={300}
                   height={500}
                 />
@@ -577,7 +495,7 @@ const ConnectWithVone: NextPage = () => {
                   src="/vone-images/pk.webp"
                   alt="Passion PK"
                   loading="lazy"
-                  className="w-56 h-56 md:w-64 md:h-64 lg:w-full lg:h-full object-contain"
+                  className="w-56 h-56 md:w-64 md:h-64 lg:w-full lg:h-full object-contain lg:min-w-64 2xl:min-w-auto"
                   width={300}
                   height={500}
                 />
@@ -599,7 +517,7 @@ const ConnectWithVone: NextPage = () => {
                   src="/vone-images/party.webp"
                   alt="Party Social/Party Room"
                   loading="lazy"
-                  className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain"
+                  className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain lg:min-w-64 2xl:min-w-auto"
                   width={300}
                   height={500}
                 />
@@ -621,7 +539,7 @@ const ConnectWithVone: NextPage = () => {
                   src="/vone-images/beauty.webp"
                   alt="Beauty Live"
                   loading="lazy"
-                  className="w-56 h-56 md:w-64 md:h-64 lg:w-full lg:h-full object-contain"
+                  className="w-56 h-56 md:w-64 md:h-64 lg:w-full lg:h-full object-contain lg:min-w-64 2xl:min-w-auto"
                   width={300}
                   height={500}
                 />
