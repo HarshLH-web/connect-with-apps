@@ -413,7 +413,7 @@ const ConnectWithVone: NextPage = () => {
                   profile options.
                 </li>
                 <li>
-                  Enter Agent ID <strong>‘263506’</strong> &amp; Apply to join
+                  Enter Agent ID <strong>&apos;63534458&apos;</strong> &amp; Apply to join
                   the agency.
                 </li>
               </ul>
