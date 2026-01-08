@@ -1,15 +1,16 @@
 import Image from 'next/image';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import TopBanner from '@/components/ui/TopBanner';
 function Support() {
-  const [formValues, setFormValues] = useState({
-    countryCode: "+91" // Initialize with default country code
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [countryCodes, setCountryCodes] = useState([]);
-  const [open, setOpen] = useState(false);
+  // const [formValues, setFormValues] = useState({
+    // countryCode: "+91" // Initialize with default country code
+  // });
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [countryCodes, setCountryCodes] = useState([]);
+  // const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   // Close on outside click
@@ -25,80 +26,80 @@ function Support() {
     };
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Ensure country code is set (use default +91 if not selected)
-    const countryCode = formValues.countryCode || "+91";
+  //   // Ensure country code is set (use default +91 if not selected)
+  //   const countryCode = formValues.countryCode || "+91";
     
-    // Get IP address
-    const ipAddress = await fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => data.ip);
+  //   // Get IP address
+  //   const ipAddress = await fetch('https://api.ipify.org?format=json')
+  //     .then(response => response.json())
+  //     .then(data => data.ip);
 
-    const fullNumber = countryCode + formValues.phone;
+  //   const fullNumber = countryCode + formValues.phone;
 
-    // Prepare the form data
-    const dataToSend = {
-      name: formValues.name || '',
-      email: formValues.email || '',
-      phone: fullNumber || '',
-      country: formValues.country || '',
-      message: formValues.message || '',
-      ip_address: ipAddress,
-      page_url: window.location.href,
-    };
+  //   // Prepare the form data
+  //   const dataToSend = {
+  //     name: formValues.name || '',
+  //     email: formValues.email || '',
+  //     phone: fullNumber || '',
+  //     country: formValues.country || '',
+  //     message: formValues.message || '',
+  //     ip_address: ipAddress,
+  //     page_url: window.location.href,
+  //   };
 
-    try {
-      const response = await fetch('https://webpanel.store/api/formData', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(dataToSend),
-      });
+  //   try {
+  //     const response = await fetch('https://webpanel.store/api/formData', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(dataToSend),
+  //     });
 
-      if (response.ok) {
-        const result = await response.json();
-        console.log("Form successfully submitted:", result);
-        alert("Form submitted successfully");
-        setFormValues({}); // Reset form after successful submission
-      } else {
-        console.error("Error submitting form:", response.statusText);
-      }
-    } catch (error) {
-      console.error("Error sending form data:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //     if (response.ok) {
+  //       const result = await response.json();
+  //       console.log("Form successfully submitted:", result);
+  //       alert("Form submitted successfully");
+  //       setFormValues({}); // Reset form after successful submission
+  //     } else {
+  //       console.error("Error submitting form:", response.statusText);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error sending form data:", error);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues((prevValues) => ({
-      ...prevValues,
-      [name]: value,
-    }));
-  };
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormValues((prevValues) => ({
+  //     ...prevValues,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const fetchCountryCode = async () => {
-    const response = await fetch('https://restcountries.com/v3.1/all?fields=name,idd');
-    const data = await response.json();
-    const formatted = data
-          .filter((c) => c.idd?.root && c.idd?.suffixes?.length)
-          .map((c) => ({
-            label: c.name.common,
-            value: `${c.idd.root}${c.idd.suffixes[0]}`,
-          }))
-          .sort((a, b) => a.label.localeCompare(b.label));
-    console.log(formatted);
-    setCountryCodes(formatted);
-  };
+  // const fetchCountryCode = async () => {
+  //   const response = await fetch('https://restcountries.com/v3.1/all?fields=name,idd');
+  //   const data = await response.json();
+  //   const formatted = data
+  //         .filter((c) => c.idd?.root && c.idd?.suffixes?.length)
+  //         .map((c) => ({
+  //           label: c.name.common,
+  //           value: `${c.idd.root}${c.idd.suffixes[0]}`,
+  //         }))
+  //         .sort((a, b) => a.label.localeCompare(b.label));
+  //   console.log(formatted);
+  //   setCountryCodes(formatted);
+  // };
 
-  useEffect(() => {
-    fetchCountryCode();
-  }, []);
+  // useEffect(() => {
+  //   fetchCountryCode();
+  // }, []);
 
   return (
     <>
@@ -125,11 +126,8 @@ function Support() {
       <link rel="canonical" href="https://connectwithapps.com/customer-support" />
     </Head>
     <Header />
-    <div className='contact-bg'>
-      <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase text-center px-8'>Customer Support</h1>
-
-    </div>
-      <div className="mt-8 lg:mt-24 bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] border border-[#DFDFDF] rounded-3xl w-[90%] max-w-3xl mx-auto py-6">
+    <TopBanner title="Customer Support" bgImage="bg-[url('/contact-us-bg.webp')]" />
+      <div className="mt-8 lg:mt-24 bg-linear-to-t from-[#F8ECEE] to-[#FEFEFC] border border-[#DFDFDF] rounded-3xl w-[90%] max-w-3xl mx-auto py-6">
 
         <h2 className="text-2xl lg:text-4xl font-semibold text-center">Get In Touch With Us</h2>
         <p className="text-center text-base text-[#363636] my-2 max-w-xl mx-auto px-2">You can simply connect us through filling this form or drop your queries to the given mail. We will assist you shortly.</p>
@@ -280,12 +278,14 @@ function Support() {
         <Image src="/clock.svg" alt="Get quick response" className='w-32' width={100} height={100} />
         <h3 className='text-2xl lg:text-4xl font-bold text-center'>Available: Monday To Saturday </h3>
 
-        <h3 className='text-2xl lg:text-4xl text-[#DE0402] font-bold text-center'>9:30AM - 5:30PM IST</h3>
+        <h3 className='text-2xl lg:text-4xl bg-linear-to-t from-[#353D76] to-[#6372DC] bg-clip-text text-transparent font-bold text-center mt-2'>9:30AM - 5:30PM IST</h3>
 
-        <a href='https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> +918448877709</a>
+        <a href='https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#6372DC] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> +918448877709</a>
 
-        <a href='mailto:support@connectwithapps.com' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> support@connectwithapps.com</a>
+        <a href='mailto:support@connectwithapps.com' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border border-[#6372DC] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> support@connectwithapps.com</a>
       </div>
+
+      <hr className='w-[95%] max-w-screen-2xl mx-auto border-t border-[#DFDFDF] lg:my-6' />
       <Footer />
     </>
 

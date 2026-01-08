@@ -1,15 +1,13 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import TopBanner from "@/components/ui/TopBanner";
 
 export default function AboutUs() {
   return (
     <>
       <Header />
-      <div className="w-full h-40 lg:h-72 bg-[url('/about-bg.png')] bg-cover bg-center mt-16 lg:mt-18 flex items-center justify-center">
-        <h1 className="text-4xl lg:text-7xl font-semibold text-center text-white">
-          About Us
-        </h1>
-      </div>
+      <TopBanner title="About Us" bgImage="bg-[url('/about-bg.png')]" />
+
 
       <section className="bg-[#F8ECEE] pt-12 pb-12 lg:pt-20 lg:pb-20">
       <div className="w-[90%] max-w-7xl mx-auto bg-[#F8ECEE]">

@@ -18,7 +18,7 @@ const ScrollAnimation = () => {
         transformOrigin: "0%", // Ensure the scale happens from the left side
         width: "100%", // Full width element
         height: "2px", // Adjust height as needed
-        background: "#DE0402", // Adjust color as needed
+        background: "#353D76", // Adjust color as needed
       }}
     />
   );

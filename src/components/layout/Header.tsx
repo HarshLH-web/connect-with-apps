@@ -203,7 +203,7 @@ function Header() {
       <div className="h-px w-48 bg-gray-300"></div>
 
       {/* Support Dropdown */}
-      <div className="group relative text-base hover:text-gray-400 font-medium" ref={mobileSupportDropdownRef}>
+      {/* <div className="group relative text-base hover:text-gray-400 font-medium" ref={mobileSupportDropdownRef}>
         <button
           onClick={() => setIsMobileSupportOpen(!isMobileSupportOpen)}
           className="flex items-center justify-center mx-auto"
@@ -232,21 +232,21 @@ function Header() {
           animate={isMobileSupportOpen ? "open" : "closed"}
           variants={dropdownVariants}
         >
-          <Link href="/customer-support" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
+          <Link href="/contact-us" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
             setIsMobileSupportOpen(false);
             setIsMenuOpen(false);
           }}>
-            Customer Support
+            Contact Us
           </Link>
           <div className="h-px w-40 mx-auto bg-gray-300"></div>
-          <Link href="/asked-questions" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
+        </motion.div>
+      </div> */}
+      <Link href="/contact-us" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
             setIsMobileSupportOpen(false);
             setIsMenuOpen(false);
           }}>
-            FAQ
+            Contact Us
           </Link>
-        </motion.div>
-      </div>
 
       {/* Apply Now Button */}
       <button
@@ -334,7 +334,7 @@ function Header() {
           </Link>
           <div className="h-6 w-px bg-[#353d7688]"></div>
           {/* Support Dropdown */}
-          <div className="group relative text-base font-medium" ref={supportDropdownRef}>
+          {/* <div className="group relative text-base font-medium" ref={supportDropdownRef}>
             <button onClick={() => setIsSupportOpen(!isSupportOpen)} className="flex items-center relative group transition-all duration-300 text-[#7b7b7b] hover:text-[#000000]">
               <span>Support</span>
               <motion.svg
@@ -360,14 +360,15 @@ function Header() {
                 isSupportOpen ? 'block' : 'hidden'
               } absolute top-9 -left-14 w-48 bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] rounded-[0rem_0rem_1rem_1rem] mt-2 text-black overflow-hidden z-10`}
             >
-              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#353D76] whitespace-nowrap text-center transition-all duration-300" onClick={() => setIsSupportOpen(false)}>
-                Customer Support
-              </Link>
-              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#353D76] whitespace-nowrap text-center transition-all duration-300" onClick={() => setIsSupportOpen(false)}>
-                FAQ
+              <Link href="/contact-us" className="block px-6 py-3 text-base hover:text-white hover:bg-[#353D76] whitespace-nowrap text-center transition-all duration-300" onClick={() => setIsSupportOpen(false)}>
+                Contact Us
               </Link>
             </div>
-          </div>
+          </div> */}
+          <Link href="/contact-us" className={`text-base font-medium relative group transition-all duration-300 ${pathname === '/contact-us' ? 'text-[#000000]' : 'text-[#7b7b7b]'}`}>
+            <span>Contact Us</span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#353D76] group-hover:w-full transition-all duration-300"></span>
+          </Link>
 
 
           
