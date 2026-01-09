@@ -14,30 +14,17 @@ export default function AboutUs() {
         <h2 className="text-3xl lg:text-5xl font-semibold text-center uppercase">
           We are talent agency
         </h2>
-        <p className="text-lg lg:text-xl text-center text-[#626262] pt-4 lg:pt-6">
-          LH Talent Agency bridges the gap between talented streamers and
-          influencers with the leading live-streaming applications worldwide. We
-          are passionate about empowering streamers and providing adequate
-          support to help them thrive in the broadcasting industry. We reach a
-          network of over 30,000 agents and 17,000 hosts and work with
-          individuals from regions including India, Pakistan, the Philippines,
-          the USA, Africa, and Europe. We specialize in recruiting talented
-          streamers and guiding them to achieve their dreams of becoming social
-          stars or influencers. We welcome talent who brings energy,
-          originality, and authenticity to their broadcasts.
+        <p className="text-lg lg:text-xl text-center text-[#393939] pt-4 lg:pt-6 pb-2 lg:pb-3">
+        At <span className="font-semibold">Connect Agency</span>, we believe that <span className="font-semibold">talent has no boundaries</span>. We are a leading talent management agency that is making the live streaming world easy and profitable for everyone.
         </p>
-        <p className="text-lg lg:text-xl text-center text-[#626262] pt-4 pb-4">
-          We collaborate with various live-streaming and video-calling
-          applications like Poppo Live, Mimi, Chamet, Niki, HoneyCam, etc. We
-          are proud to offer personalized support to each streamer and agent and
-          contribute to their profitable live-streaming journey. We don&apos;t
-          just see ourselves as a talent agency we&apos;re a community of
-          creators who support one another in achieving our goals.
+        <p className="text-lg lg:text-xl text-center text-[#393939] py-2 lg:py-3">
+        With almost <span className="font-semibold">two years of experience,</span> having <span className="font-semibold">4000+ agents</span> and <span className="font-semibold">2500+ hosts</span>, we expanded our network in <span className="font-semibold">India, Pakistan, the Philippines, the USA and Europe</span>.
         </p>
-        <p className="text-lg lg:text-xl text-center font-semibold text-[#000000]">
-          At LH Talent Agency, the possibilities are endless. Whether you are an
-          aspiring streamer or an experienced influencer, we invite you to be a
-          part of an exciting journey.
+        <p className="text-lg lg:text-xl text-center text-[#393939] py-2 lg:py-3">
+        We act as a bridge between the talented streamers and the <span className="font-semibold">top live streaming platforms</span>. Our top collaborating live streaming and video calling applications are <span className="font-semibold">Poppo Live, Chamet, Niki Live, Joyo Live, Taka Live, etc.</span>
+        </p>
+        <p className="text-lg lg:text-xl text-center text-[#393939] py-2 lg:py-3">
+        Whether you want to go live or are looking to start your own agency, Connect Agency is here for you. We provide the support and guidance to help you grow. We take care of the technical part and registration, so you can focus on the more important things: <span className="font-semibold">entertaining your audience and leading your team</span>.
         </p>
       </div>
       </section>
@@ -51,23 +38,17 @@ export default function AboutUs() {
               Mission
             </h2>
             <p className="text-base lg:text-lg leading-normal">
-              Our mission is to create a supportive community where every talent
-              shines. We are dedicated to discovering and nurturing talents and
-              ensuring every streamer has been given personalized support and
-              opportunities to thrive in the live-streaming world.{" "}
+            To help creators turn their passion into a profession. We connect you directly to the top live streaming apps. We offer expert support and performance guidance to build a successful income source. We don&apos;t just &quot;register&quot; you; we partner with you on your journey.
             </p>
           </div>
         </div>
         <div className="w-full lg:w-[55%] bg-[url('/vission-bg.png')] lg:bg-[url('/vission-bg-xl.png')] h-full bg-cover bg-right lg:bg-left text-white text-center py-12 lg:py-20">
-          <div className="w-[90%] lg:w-[85%] 2xl:px-20 mx-auto lg:mr-auto lg:pl-12 lg:mx-0">
+          <div className="w-[90%] lg:w-[85%] 2xl:px-24 mx-auto lg:mr-auto lg:pl-12 lg:mx-0">
             <h2 className="text-3xl lg:text-6xl font-bold uppercase mb-2 lg:mb-4 lg:pl-20">
               Vision
             </h2>
             <p className="text-base lg:text-lg leading-normal lg:pl-20">
-              We picture a world where different talents come together and
-              live-streaming becomes a colorful, vibrant community of creativity
-              and connections. We aim to make live streaming a great space to
-              share stories and passions, making each broadcast a celebration.
+              To be the world&apos;s most trusted talent agency for digital creators. We aim to build a global community where anyone can get rewarded for their talent. At Connect Agency, we see a world where live streaming is open for everyone, and we are here to bridge that gap. We are working toward a future where &quot;where you live&quot; never limits &quot;what you can earn.&quot;
             </p>
           </div>
         </div>

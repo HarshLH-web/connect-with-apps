@@ -4,19 +4,46 @@ import Head from "next/head";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TopBanner from "@/components/ui/TopBanner";
+interface FormValues {
+  countryCode: string;
+  name?: string;
+  email?: string;
+  phone?: string;
+  country?: string;
+  message?: string;
+}
+
+interface CountryCode {
+  label: string;
+  value: string;
+}
+
+interface CountryData {
+  name: {
+    common: string;
+  };
+  idd?: {
+    root?: string;
+    suffixes?: string[];
+  };
+}
+
 function Support() {
-  const [formValues, setFormValues] = useState({
+  const [formValues, setFormValues] = useState<FormValues>({
     countryCode: "+91", // Initialize with default country code
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [countryCodes, setCountryCodes] = useState([]);
+  const [countryCodes, setCountryCodes] = useState<CountryCode[]>([]);
   const [open, setOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close on outside click
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
         setOpen(false);
       }
     };
@@ -26,7 +53,7 @@ function Support() {
     };
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -52,19 +79,22 @@ function Support() {
     };
 
     try {
-      const response = await fetch("https://webpanel.store/api/connect-formData", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataToSend),
-      });
+      const response = await fetch(
+        "https://webpanel.store/api/connect-formData",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dataToSend),
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
         console.log("Form successfully submitted:", result);
         alert("Form submitted successfully");
-        setFormValues({}); // Reset form after successful submission
+        setFormValues({ countryCode: "+91" }); // Reset form after successful submission
       } else {
         console.error("Error submitting form:", response.statusText);
       }
@@ -75,7 +105,9 @@ function Support() {
     }
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormValues((prevValues) => ({
       ...prevValues,
@@ -83,23 +115,28 @@ function Support() {
     }));
   };
 
-  const fetchCountryCode = async () => {
-    const response = await fetch(
-      "https://restcountries.com/v3.1/all?fields=name,idd"
-    );
-    const data = await response.json();
-    const formatted = data
-      .filter((c) => c.idd?.root && c.idd?.suffixes?.length)
-      .map((c) => ({
-        label: c.name.common,
-        value: `${c.idd.root}${c.idd.suffixes[0]}`,
-      }))
-      .sort((a, b) => a.label.localeCompare(b.label));
-    console.log(formatted);
-    setCountryCodes(formatted);
-  };
-
   useEffect(() => {
+    const fetchCountryCode = async () => {
+      const response = await fetch(
+        "https://restcountries.com/v3.1/all?fields=name,idd"
+      );
+      const data: CountryData[] = await response.json();
+      const formatted: CountryCode[] = data
+        .filter(
+          (
+            c
+          ): c is CountryData & { idd: { root: string; suffixes: string[] } } =>
+            Boolean(c.idd?.root && c.idd?.suffixes?.length)
+        )
+        .map((c) => ({
+          label: c.name.common,
+          value: `${c.idd.root}${c.idd.suffixes[0]}`,
+        }))
+        .sort((a, b) => a.label.localeCompare(b.label));
+      console.log(formatted);
+      setCountryCodes(formatted);
+    };
+
     fetchCountryCode();
   }, []);
 
@@ -166,12 +203,11 @@ function Support() {
         bgImage="bg-[url('/contact-us-bg.webp')]"
       />
       <div className="mt-8 lg:mt-24 bg-linear-to-t from-[#F8ECEE] to-[#FEFEFC] border border-[#DFDFDF] rounded-3xl w-[90%] max-w-3xl mx-auto py-6">
-        <h2 className="text-2xl lg:text-4xl font-semibold text-center">
+        {/* <h2 className="text-2xl lg:text-4xl font-semibold text-center">
           Get In Touch With Us
-        </h2>
-        <p className="text-center text-base text-[#363636] my-2 max-w-xl mx-auto px-2">
-          You can simply connect us through filling this form or drop your
-          queries to the given mail. We will assist you shortly.
+        </h2> */}
+        <p className="text-center text-xl lg:text-2xl font-semibold text-[#000000] my-2 max-w-xl mx-auto px-2">
+        We are here to help you, so feel free to reach out with any questions
         </p>
         <div className="max-w-2xl mx-auto py-4">
           <form onSubmit={handleSubmit} className="w-full">
@@ -356,7 +392,7 @@ function Support() {
           height={100}
         />
         <h3 className="text-2xl lg:text-4xl font-bold text-center">
-          Available: Monday To Saturday{" "}
+          Working Hours: Monday To Saturday{" "}
         </h3>
 
         <h3 className="text-2xl lg:text-4xl bg-linear-to-t from-[#353D76] to-[#6372DC] bg-clip-text text-transparent font-bold text-center mt-2">

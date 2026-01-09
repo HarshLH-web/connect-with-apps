@@ -70,7 +70,7 @@ const FaqAccordion = ({ faqs = [] }: { faqs: FaqItem[] }) => {
               }`}
               onClick={() => toggleAccordion(index)}
             >
-              <span className="text-base md:text-lg font-semibold">
+              <span className="text-base md:text-lg font-medium">
                 {faq.question}
               </span>
               {/* Arrow Icon */}

@@ -154,7 +154,7 @@ export default function Home() {
               {services.map((service) => (
                 <div
                   key={service.title}
-                  className="flex flex-col items-center justify-start text-center bg-white rounded-[24px] overflow-hidden"
+                  className="flex flex-col items-center justify-start text-center bg-white rounded-[24px] overflow-hidden" style={{boxShadow: "0px 5px 10px 0px #00000025"}}
                 > 
                 <Image
                     src={service.image}
@@ -243,7 +243,7 @@ export default function Home() {
               {testimonials.map((testimonial: TestimonialItem) => (
                 <div
                   key={testimonial.name}
-                  className="text-left border border-[#a1a1a1] rounded-3xl px-4 lg:px-6 pb-4 lg:pb-6 pt-18 relative h-fit"
+                  className="text-left rounded-3xl px-4 lg:px-6 pb-4 lg:pb-6 pt-18 relative h-fit" style={{boxShadow: "0px 5px 10px 0px #00000025"}}
                 >
                   <Image
                     src={testimonial.image}

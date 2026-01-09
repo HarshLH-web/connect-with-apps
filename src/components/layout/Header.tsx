@@ -122,7 +122,7 @@ function Header() {
         {/* Mobile Navigation */}
         <div
           ref={menuRef}
-          className={`lg:hidden fixed top-12 right-0 flex flex-col items-center justify-center w-full nav-gradient h-[calc(100vh-48px)] z-20 transition-transform duration-500 ease-in-out bg-white ${
+          className={`lg:hidden fixed top-12 right-0 flex flex-col items-center justify-center w-full nav-gradient h-[calc(100vh-48px)] z-60 transition-transform duration-500 ease-in-out bg-white ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -148,13 +148,11 @@ function Header() {
         >
           Registration
           <motion.svg
-            className="w-4 h-4 transform inline-flex mb-1 ml-1"
+            className={`w-4 h-4 transform inline-flex mb-1 ml-1 transition-transform duration-300 ease-in-out ${isMobileRegistrationOpen ? 'rotate-180' : ''}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
             initial="closed"
-            animate={isRegistrationOpen ? "open" : "closed"}
-            variants={arrowVariants}
           >
             <path
               strokeLinecap="round"
@@ -165,12 +163,13 @@ function Header() {
           </motion.svg>
         </button>
         <motion.div
-          className="overflow-hidden bg-white rounded-2xl text-black w-56 text-center"
+          className="overflow-hidden"
           initial="closed"
           animate={isMobileRegistrationOpen ? "open" : "closed"}
           variants={dropdownVariants}
 
         >
+          <div className='mt-2 bg-linear-to-b from-[#353D76] to-[#6372DC] rounded-2xl text-white w-56 text-center'>
           <Link
             href="/become-live-streamer"
             className="block px-4 py-2 text-base hover:text-gray-400 font-medium whitespace-nowrap"
@@ -192,6 +191,7 @@ function Header() {
           >
             Become Agent
           </Link>
+          </div>
         </motion.div>
       </div>
 
@@ -241,10 +241,7 @@ function Header() {
           <div className="h-px w-40 mx-auto bg-gray-300"></div>
         </motion.div>
       </div> */}
-      <Link href="/contact-us" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
-            setIsMobileSupportOpen(false);
-            setIsMenuOpen(false);
-          }}>
+      <Link href="/contact-us" className="text-base hover:text-gray-400 font-medium">
             Contact Us
           </Link>
 
@@ -317,7 +314,7 @@ function Header() {
             <div
               className={`${
                 isRegistrationOpen ? 'block' : 'hidden'
-              } absolute top-9 -left-10 w-56 bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] mt-2 text-black rounded-[0rem_0rem_1rem_1rem] overflow-hidden text-center z-10`}
+              } absolute top-5 -left-10 w-56 bg-linear-to-t from-[#353D76] to-[#6372DC] mt-2 text-white rounded-[0rem_0rem_1rem_1rem] overflow-hidden text-center z-10`}
             >
               <Link href="/become-live-streamer" className="block px-4 py-3 text-base hover:text-white font-medium hover:bg-[#353D76] transition-all duration-300" onClick={() => setIsRegistrationOpen(false)}>
                 Become Live Streamer
