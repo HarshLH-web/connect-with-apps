@@ -103,7 +103,7 @@ function Footer() {
       {/* Copyright and Social Links - Last on both mobile and desktop */}
       <div className="border bg-[#F8ECEE] border-[#00000087] py-4 text-center lg:text-left flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center order-4 w-[90%] sm:w-[95%] max-w-360 mx-auto px-2 lg:px-6 rounded-2xl">
         <div className="flex items-center gap-2 lg:gap-4">
-        <Image src="/logo.png" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
+        <Image src="/logo.svg" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
         <div className='w-px h-8 bg-black/25 hidden lg:block'></div>
             <p className="text-sm text-gray-900 hidden lg:block">
             &copy; 2026 Connect With Apps. All rights reserved.

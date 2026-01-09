@@ -91,7 +91,7 @@ function Header() {
       <div className="max-w-[90%] lg:max-w-[95%] xl:max-w-[85%] mx-auto sm:px-4 py-2 lg:py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/"><Image src="/logo.png" alt="LH Talent Agency - logo" className="min-w-40 lg:min-w-44 w-40 lg:w-44" width={200} height={200} /></Link>
+          <Link href="/"><Image src="/logo.svg" alt="LH Talent Agency - logo" className="min-w-40 lg:min-w-44 w-40 lg:w-44" width={200} height={200} /></Link>
         </div>
 
         {/* Hamburger Menu Button (Mobile) */}
