@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const AppsAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(2); // POPPO expanded by default
+  const [activeIndex, setActiveIndex] = useState(1); // POPPO expanded by default
   // const [isMobile, setIsMobile] = useState(false);
 
   const toggleAccordion = (index: number) => {
@@ -21,17 +21,6 @@ const AppsAccordion = () => {
   // }, []);
 
   const sections = [
-    {
-      title: "TAKA LIVE",
-      heading: "TAKA LIVE",
-      description: "Discover the world of fun and non-stop entertainment.",
-      hostBtnText: "Become Takalive Host",
-      hostBtnURL: "https://os8.me/Hwi33i",
-      agentBtnText: "Become Takalive Agent",
-      agentBtnURL: "https://os8.me/CCyaYf",
-      bgimg: "/our-apps/taka-bg.png",
-      imgUrl: "/our-apps/taka-logo.webp",
-    },
     {
       title: "CHAMET",
       heading: "CHAMET",
@@ -119,12 +108,12 @@ const AppsAccordion = () => {
                 alt={`${section.title} - Logo`}
                 width={65}
                 height={65}
-                className={`h-10 w-10 md:h-12 md:w-12 rounded-2xl md:rounded-full absolute left-6 bottom-5 lg:bottom-[10px] lg:left-4 transition-all delay-0 duration-100 ${
+                className={`h-12 w-12 md:h-12 md:w-12 rounded-2xl md:rounded-full absolute left-5 bottom-[18px] lg:bottom-[13px] lg:left-4 transition-all delay-0 duration-100 ${
                   activeIndex === index ? "opacity-0" : "opacity-100"
                 }`}
               />
               <h3
-                className={`text-2xl md:text-[26px] text-black font-semibold whitespace-nowrap tracking-wide transition-all duration-0 absolute left-20 bottom-6 lg:bottom-4 lg:left-22 ${
+                className={`text-2xl md:text-[26px] text-black font-semibold whitespace-nowrap tracking-wide transition-all duration-0 absolute left-20 bottom-[25px] lg:bottom-5 lg:left-22 ${
                   activeIndex === index ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -136,7 +125,7 @@ const AppsAccordion = () => {
                 alt="Arrow Right"
                 width={30}
                 height={30}
-                className={`absolute right-6 bottom-6 lg:bottom-5 lg:right-5 transition-all delay-0 duration-100
+                className={`absolute right-6 bottom-[28px] lg:bottom-6 lg:right-5 transition-all delay-0 duration-100
                   ${activeIndex === index ? "opacity-0" : "opacity-100"}`}
               />
 

@@ -86,9 +86,14 @@ export default function Home() {
         'The highest-earning live streaming apps are Poppo Live, Chamet, Niki Live, and Joyo Live. These platforms are perfect for creators who want to connect with global audiences',
     },
     {
+      question: "How can I withdraw money from live streaming apps?",
+      answer:
+        'As an agent or host, you can easily withdraw money from streaming apps like Poppo Live, Chamet, Niki Live, etc. It’s an easy self-withdrawal process. The withdrawal methods include EPay, Binance, Pioneer, Bank Transfers, etc., depending on the app you are using and your country.',
+    },
+    {
       question: "Does Connect Tech provide support after joining?",
       answer:
-        'Yes! Connect Agency provides comprehensive live streaming services, including technical support, performance guidance, and expert strategies for your long-term success.',
+        'Yes! Connect Agency provides comprehensive live streaming services, including app-related support, performance guidance, and expert strategies for your long-term success',
     },
   ];
 
