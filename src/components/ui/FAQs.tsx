@@ -15,7 +15,7 @@ const FaqAccordion = ({ faqs = [] }: { faqs: FaqItem[] }) => {
   // const faqs = [
   //   {
   //     question: 'Who are streamers?',
-  //     answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With LH Talent Agency, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #DE0402;">Start your journey today!</a>',
+  //     answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With Connect With Apps, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #DE0402;">Start your journey today!</a>',
   //   },
   //   {
   //     question: 'How can I earn money through live streaming?',
@@ -23,7 +23,7 @@ const FaqAccordion = ({ faqs = [] }: { faqs: FaqItem[] }) => {
   //   },
   //   {
   //     question: 'How can I become an official streamer?',
-  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">here</a>.',
+  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like Connect With Apps can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">here</a>.',
   //   },
   //   {
   //     question: 'Do we need a huge follower list to start streaming?',
@@ -35,11 +35,11 @@ const FaqAccordion = ({ faqs = [] }: { faqs: FaqItem[] }) => {
   //   },
   //   {
   //     question: 'How much can I earn as a host?',
-  //     answer: 'As a host, your earnings can vary depending on your effort, engagement, and the platform’s incentives. Your income will be different daily. The interaction with your viewers will result in your earnings of the day. Some hosts earn a part-time income, while others make a full-time living through streaming. <br /> LH Talent Agency can help you maximize your potential by providing you with the needed support and guidance.',
+  //     answer: 'As a host, your earnings can vary depending on your effort, engagement, and the platform’s incentives. Your income will be different daily. The interaction with your viewers will result in your earnings of the day. Some hosts earn a part-time income, while others make a full-time living through streaming. <br /> Connect With Apps can help you maximize your potential by providing you with the needed support and guidance.',
   //   },
   //   {
   //     question: 'How can I become an official agency?',
-  //     answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/blogs/how-to-create-poppo-live-account" style="color: #DE0402;">here</a>.',
+  //     answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> Connect With Apps works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/blogs/how-to-create-poppo-live-account" style="color: #DE0402;">here</a>.',
   //   },
   //   {
   //     question: 'How much can I earn as an agency?',
@@ -51,7 +51,7 @@ const FaqAccordion = ({ faqs = [] }: { faqs: FaqItem[] }) => {
   //   },
   //   {
   //     question: 'Is there a specific time requirement for streaming?',
-  //     answer: 'There’s no fixed time for streaming, but consistency helps you grow. A regular schedule makes it easier for your audience to connect with you and know when to tune in. Some platforms require a minimum number of streaming hours to earn rewards. The best part of streaming is the flexibility to work according to your schedule. LH Talent Agency can support you in setting up your schedule based on your audience reach.',
+  //     answer: 'There’s no fixed time for streaming, but consistency helps you grow. A regular schedule makes it easier for your audience to connect with you and know when to tune in. Some platforms require a minimum number of streaming hours to earn rewards. The best part of streaming is the flexibility to work according to your schedule. Connect With Apps can support you in setting up your schedule based on your audience reach.',
   //   },
   // ];
 

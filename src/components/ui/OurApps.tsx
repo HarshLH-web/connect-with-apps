@@ -24,20 +24,25 @@ const AppsAccordion = () => {
     {
       title: "CHAMET",
       heading: "CHAMET",
-      description: "Connect worldwide via free video chat and live streaming, without language barriers.",
+      description:
+        "Connect worldwide via free video chat and live streaming, without language barriers.",
       hostBtnText: "Download Chamet",
-      hostBtnURL: "https://play.google.com/store/apps/details?id=com.hkfuliao.chamet",
+      hostBtnURL:
+        "https://play.google.com/store/apps/details?id=com.hkfuliao.chamet",
       agentBtnText: "Become Chamet Agent",
-      agentBtnURL: "https://h5.schamet.com/webH5/inviteAgent/bind.html?companyId=3338",
+      agentBtnURL:
+        "https://h5.schamet.com/webH5/inviteAgent/bind.html?companyId=3338",
       bgimg: "/our-apps/chamet-bg.webp",
       imgUrl: "/our-apps/Chamet-Live.webp",
     },
     {
       title: "POPPO LIVE",
       heading: "POPPO LIVE",
-      description: "Interact globally through high-quality live streaming apps.",
+      description:
+        "Interact globally through high-quality live streaming apps.",
       hostBtnText: "Become Poppo Host",
-      hostBtnURL: "https://static.vshowapi.com/inviteNew/share?c=poppo&link_id=8096839&user_id=63534458&temp_type=1&sys_temp_id=2",
+      hostBtnURL:
+        "https://static.vshowapi.com/inviteNew/share?c=poppo&link_id=8096839&user_id=63534458&temp_type=1&sys_temp_id=2",
       agentBtnText: "Become Poppo Agent",
       agentBtnURL:
         "https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=poppo",
@@ -47,13 +52,17 @@ const AppsAccordion = () => {
     {
       title: "NIKI LIVE",
       heading: "NIKI LIVE",
-      description: "A high-energy global platform designed for fun and interactive streaming.",
+      description:
+        "A high-energy global platform designed for fun and interactive streaming.",
       iOSBtnText: "Get Niki on iOS",
-      iOSBtnURL: "https://apps.apple.com/my/app/niki-live-live-stream-party/id1513868713",
+      iOSBtnURL:
+        "https://apps.apple.com/my/app/niki-live-live-stream-party/id1513868713",
       hostBtnText: "Download Niki Live",
-      hostBtnURL: "https://www.dropbox.com/scl/fi/u97bdcis371gn0twrigt4/com.glive.niki_V2.34.2_03_10.apk?rlkey=old0vqarhhdeq4xhwjjmjxhp4&raw=1",
+      hostBtnURL:
+        "https://www.dropbox.com/scl/fi/u97bdcis371gn0twrigt4/com.glive.niki_V2.34.2_03_10.apk?rlkey=old0vqarhhdeq4xhwjjmjxhp4&raw=1",
       agentBtnText: "Become Niki Agent",
-      agentBtnURL: "https://d34kziiug05v0a.cloudfront.net/event/jump/invite_agent?guild_id=31226&guild_code=7d714cfcd937350a9f6496e665a5720c&lang=en",
+      agentBtnURL:
+        "https://d34kziiug05v0a.cloudfront.net/event/jump/invite_agent?guild_id=31226&guild_code=7d714cfcd937350a9f6496e665a5720c&lang=en",
       bgimg: "/our-apps/niki-bg.webp",
       imgUrl: "/our-apps/Niki-live.webp",
     },
@@ -63,9 +72,11 @@ const AppsAccordion = () => {
       description:
         "A fun, engaging application for real-time interactions on video streaming platforms.",
       hostBtnText: "Download Joyo Live",
-      hostBtnURL: "https://joyo.go.link?adj_t=1p4hrtnk&deep_link=joyo%3A%2F%2Finvite%3FinviteCode%3D900248693",
+      hostBtnURL:
+        "https://joyo.go.link?adj_t=1p4hrtnk&deep_link=joyo%3A%2F%2Finvite%3FinviteCode%3D900248693",
       agentBtnText: "Become Joyo Agent",
-      agentBtnURL: "https://h5.joyoshow.com/applyinvatefamily?user_id=900248693",
+      agentBtnURL:
+        "https://h5.joyoshow.com/applyinvatefamily?user_id=900248693",
       bgimg: "/our-apps/joyo-bg.png",
       imgUrl: "/our-apps/joyo-logo.png",
     },

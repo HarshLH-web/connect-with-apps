@@ -95,10 +95,10 @@ function Blogs() {
   return (
     <>
       <Head>
-        <title>LH Talent Agency Blog: Tips for Streamers</title>
+        <title>Connect With Apps Blog: Tips for Streamers</title>
         <meta
           name="description"
-          content="LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
+          content="Connect With Apps's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
         />
         <meta
           name="keywords"
@@ -109,12 +109,12 @@ function Blogs() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="LH Talent Agency Blog: Tips for Streamers"
+          content="Connect With Apps Blog: Tips for Streamers"
         />
-        <meta property="og:site_name" content="LH Talent Agency" />
+        <meta property="og:site_name" content="Connect With Apps" />
         <meta
           property="og:description"
-          content="LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
+          content="Connect With Apps's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
         />
         <meta
           property="og:image"
@@ -130,11 +130,11 @@ function Blogs() {
         />
         <meta
           name="twitter:title"
-          content="LH Talent Agency Blog: Tips for Streamers"
+          content="Connect With Apps Blog: Tips for Streamers"
         />
         <meta
           name="twitter:description"
-          content="LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
+          content="Connect With Apps's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!"
         />
         <meta
           name="twitter:image"

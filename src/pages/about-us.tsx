@@ -58,13 +58,13 @@ export default function AboutUs() {
 
       <section className="bg-[#F8ECEE] pt-12 pb-12 lg:pt-20 lg:pb-20">
         <div className="w-[90%] max-w-7xl mx-auto bg-[#F8ECEE]">
-        <h2 className="text-3xl lg:text-5xl font-semibold text-center uppercase mb-4 lg:mb-12"> Our Team</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold text-center uppercase mb-4 lg:mb-12"> Meet the Founder</h2>
 
         <div className="flex flex-col items-center justify-center border border-black/50 rounded-3xl px-12 py-8 max-w-5xl mx-auto">
             <p className="text-base lg:text-lg text-center text-[#1a1a1a]">Connect Agency is founded and led by Mr Apoorv Verma, who brings over 6 years of experience in affiliate marketing to the agency. His deep industry knowledge drives the growth of the Connect Agency. Under his leadership, the agency has become a trusted bridge to the world’s top live streaming platforms. Mr Verma is dedicated to providing a professional and profitable environment for our 4,000+ agents and 2,500+ hosts. At Connectwithapps.com, his vision ensures every creator has a clear path to professional success.</p>
             <div className="h-1 w-24 bg-black rounded-full my-4"></div>
             <h3 className="text-lg lg:text-xl font-semibold text-center uppercase">Mr. Apoorv Verma</h3>
-            <p className="text-base lg:text-lg text-center text-[#1a1a1a]">CTO & CMO</p>
+            <p className="text-base lg:text-lg text-center text-[#1a1a1a]">Founder</p>
         </div>
       </div>
       </section>

@@ -161,7 +161,7 @@ function BlogDetailPage({ blog }: BlogDetailPageProps) {
   return (
     <>
       <Head>
-        <title>{`${blog.metaTitle} | LH Talent Agency`}</title>
+        <title>{`${blog.metaTitle} | Connect With Apps`}</title>
         <meta name="description" content={blog.metaDescription} />
         <link rel="canonical" href={`${blog.canonicalUrl}`} />
         <meta name="keywords" content={blog.metaKeywords?.join(", ") || ""} />
@@ -171,7 +171,7 @@ function BlogDetailPage({ blog }: BlogDetailPageProps) {
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={blog.metaTitle} />
-        <meta property="og:site_name" content="LH Talent Agency" />
+        <meta property="og:site_name" content="Connect With Apps" />
         <meta property="og:description" content={blog.metaDescription} />
         <meta property="og:image" content={blog.coverImage} />
         <meta name="twitter:card" content="summary_large_image" />

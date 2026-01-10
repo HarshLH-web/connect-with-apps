@@ -143,14 +143,14 @@ function Support() {
   return (
     <>
       <Head>
-        <title>Customer Support | LH Talent Agency: We are here to Help</title>
+        <title>Customer Support | Connect With Apps: We are here to Help</title>
         <meta
           name="description"
-          content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
+          content="Need assistance? Contact Connect With Apps's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
         />
         <meta
           name="keywords"
-          content="LH Talent - Customer Support, LH Talent Agency - Contact Number"
+          content="LH Talent - Customer Support, Connect With Apps - Contact Number"
         />
         {/* <!-- Facebook Meta Tags --> */}
         <meta
@@ -160,12 +160,12 @@ function Support() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Customer Support | LH Talent Agency: We are here to Help"
+          content="Customer Support | Connect With Apps: We are here to Help"
         />
-        <meta property="og:site_name" content="LH Talent Agency" />
+        <meta property="og:site_name" content="Connect With Apps" />
         <meta
           property="og:description"
-          content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
+          content="Need assistance? Contact Connect With Apps's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
         />
         <meta
           property="og:image"
@@ -181,11 +181,11 @@ function Support() {
         />
         <meta
           name="twitter:title"
-          content="Customer Support | LH Talent Agency: We are here to Help"
+          content="Customer Support | Connect With Apps: We are here to Help"
         />
         <meta
           name="twitter:description"
-          content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
+          content="Need assistance? Contact Connect With Apps's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime."
         />
         <meta
           name="twitter:image"

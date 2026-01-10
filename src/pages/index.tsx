@@ -138,7 +138,7 @@ export default function Home() {
             Whether you&apos;re looking to host or manage, we help you in your journey by connecting you directly to live streaming apps like <span className="font-bold">Poppo Live, Chamet, Niki Live, and Joyo Live</span> and many more.
             </p>
             <Button
-              link="/our-apps"
+              link="/our-services"
               className="mx-auto lg:mx-0"
               isArrow={true}
               text="Explore Our Services"
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
 
             <Button
-              link="/our-apps"
+              link="/our-services"
               isArrow={true}
               text="Explore Our Services"
             />
@@ -210,7 +210,7 @@ export default function Home() {
             Your premier gateway to live streaming platforms like Poppo, Chamet, Niki, and Joyo Live. Join our 6500+ network, earning daily on the world&apos;s best <span className="font-semibold">live streaming apps</span>.
             </p>
             <Button
-              link="/our-apps"
+              link="/our-services"
               isArrow={true}
               text="Join Connect Agency Today"
             />

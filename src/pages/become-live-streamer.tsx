@@ -404,7 +404,7 @@ export default function BecomeLiveStreamer() {
      </div>
         <p className="text-center text-xl lg:text-3xl font-medium text-[#ffffff] my-2 max-w-5xl mx-auto px-2 mt-12">Become a Live Streamer, share your talent and interact with the audience. Join live streaming platforms like Poppo Live, Chamet, Niki Live, etc and start your journey today.</p>
 
-        <p className="text-center text-2xl lg:text-4xl font-semibold text-[#ffffff] my-2 max-w-5xl mx-auto px-2 mt-4 lg:mt-8">Fill out the form to begin!</p>
+        {/* <p className="text-center text-2xl lg:text-4xl font-semibold text-[#ffffff] my-2 max-w-5xl mx-auto px-2 mt-4 lg:mt-8">Fill out the form to begin!</p> */}
       </section>
 
 

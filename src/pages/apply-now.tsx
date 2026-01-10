@@ -41,10 +41,10 @@ const Apply = () => {
   return (
     <>
       <Head>
-        <title>Apply Now | LH Talent Agency: Start Your Streaming Career</title>
+        <title>Apply Now | Connect With Apps: Start Your Streaming Career</title>
         <meta
           name="description"
-          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join LH Talent Agency today!"
+          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join Connect With Apps today!"
         />
         <meta
           name="keywords"
@@ -53,17 +53,17 @@ const Apply = () => {
         {/* <!-- Facebook Meta Tags --> */}
         <meta
           property="og:url"
-          content="https://lhtalentagency.com/apply-now"
+          content="https://connectwithapps.com/apply-now"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Apply Now | LH Talent Agency: Start Your Streaming Career"
+          content="Apply Now | Connect With Apps: Start Your Streaming Career"
         />
-        <meta property="og:site_name" content="LH Talent Agency" />
+        <meta property="og:site_name" content="Connect With Apps" />
         <meta
           property="og:description"
-          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join LH Talent Agency today!"
+          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join Connect With Apps today!"
         />
         <meta
           property="og:image"
@@ -72,25 +72,25 @@ const Apply = () => {
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="lhtalentagency.com" />
+        <meta property="twitter:domain" content="connectwithapps.com" />
         <meta
           property="twitter:url"
-          content="https://lhtalentagency.com/apply-now"
+          content="https://connectwithapps.com/apply-now"
         />
         <meta
           name="twitter:title"
-          content="Apply Now | LH Talent Agency: Start Your Streaming Career"
+          content="Apply Now | Connect With Apps: Start Your Streaming Career"
         />
         <meta
           name="twitter:description"
-          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join LH Talent Agency today!"
+          content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join Connect With Apps today!"
         />
         <meta
           name="twitter:image"
           content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://lhtalentagency.com/apply-now" />
+        <link rel="canonical" href="https://connectwithapps.com/apply-now" />
       </Head>
 
       <Header />
@@ -148,59 +148,62 @@ const Apply = () => {
               <div className="bg-[#16161612] w-full h-px mx-auto hidden md:block rounded-full"></div>
 
               <div className="flex flex-col md:flex-row items-center lg:items-start gap-8 mt-6">
-
                 <div className="flex justify-center items-center flex-col md:flex-row gap-2 lg:gap-4 w-full my-auto">
                   {app.buttons.map(
                     (button: { text: string; url: string }, i: number) => (
-                      <Link href={button.url} key={i} className="border border-[#00000025] rounded-full px-4 py-1.5 lg:py-2 text-base lg:text-lg text-[#000000e8] hover:bg-[#000000c4] hover:text-white transition-all duration-300">
+                      <Link
+                        href={button.url}
+                        key={i}
+                        className="border border-[#00000025] rounded-full px-4 py-1.5 lg:py-2 text-base lg:text-lg text-[#000000e8] hover:bg-[#000000c4] hover:text-white transition-all duration-300"
+                      >
                         {button.text}
                       </Link>
                     )
                   )}
 
-                 <div className="absolute right-4 top-4 md:static">
-                 <div
-                    className="relative"
-                    onClick={() =>
-                      setOpenDropdownIndex(
-                        openDropdownIndex === index ? null : index
-                      )
-                    }
-                  >
-                    <Image
-                      src="/Download-icon.svg"
-                      alt="download"
-                      width={24}
-                      height={24}
-                      className="cursor-pointer w-5 h-5 lg:w-6 lg:h-6"
-                    />
-                    {openDropdownIndex === index && (
-                      <div className="absolute right-0 bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] border border-gray-300 rounded-md shadow-lg mt-2 min-w-32 lg:min-w-40">
-                        <ul className="py-0">
-                          {app.download.map(
-                            (
-                              download: { text: string; url: string },
-                              i: number
-                            ) => (
-                              <li
-                                key={i}
-                                className="px-2 lg:px-4 py-1 lg:py-2 hover:bg-gray-200 cursor-pointer border-b border-gray-300 last:border-b-0"
-                              >
-                                <a
-                                  href={download.url}
-                                  download={download.text}
-                                  className=" text-sm lg:text-base"
+                  <div className="absolute right-4 top-4 md:static">
+                    <div
+                      className="relative"
+                      onClick={() =>
+                        setOpenDropdownIndex(
+                          openDropdownIndex === index ? null : index
+                        )
+                      }
+                    >
+                      <Image
+                        src="/Download-icon.svg"
+                        alt="download"
+                        width={24}
+                        height={24}
+                        className="cursor-pointer w-5 h-5 lg:w-6 lg:h-6"
+                      />
+                      {openDropdownIndex === index && (
+                        <div className="absolute right-0 bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] border border-gray-300 rounded-md shadow-lg mt-2 min-w-32 lg:min-w-40">
+                          <ul className="py-0">
+                            {app.download.map(
+                              (
+                                download: { text: string; url: string },
+                                i: number
+                              ) => (
+                                <li
+                                  key={i}
+                                  className="px-2 lg:px-4 py-1 lg:py-2 hover:bg-gray-200 cursor-pointer border-b border-gray-300 last:border-b-0"
                                 >
-                                  {download.text}
-                                </a>
-                              </li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                    )}
+                                  <a
+                                    href={download.url}
+                                    download={download.text}
+                                    className=" text-sm lg:text-base"
+                                  >
+                                    {download.text}
+                                  </a>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
