@@ -12,9 +12,9 @@ function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRegistrationOpen, setIsRegistrationOpen] = useState(false);
-  const [isSupportOpen, setIsSupportOpen] = useState(false);
+  // const [isSupportOpen, setIsSupportOpen] = useState(false);
   const [isMobileRegistrationOpen, setIsMobileRegistrationOpen] = useState(false);
-  const [isMobileSupportOpen, setIsMobileSupportOpen] = useState(false);
+  // const [isMobileSupportOpen, setIsMobileSupportOpen] = useState(false);
 
   const dropdownVariants = {
     open: {
@@ -37,9 +37,9 @@ function Header() {
   const menuRef = useRef(null);
   const buttonRef = useRef(null); // Ref for the close button
   const registrationDropdownRef = useRef(null); // Separate ref for registration
-  const supportDropdownRef = useRef(null); // Separate ref for support
+  // const supportDropdownRef = useRef(null); // Separate ref for support
   const mobileregistrationDropdownRef = useRef(null); // Separate ref for mobile registration
-  const mobileSupportDropdownRef = useRef(null); // Separate ref for mobile support
+  // const mobileSupportDropdownRef = useRef(null); // Separate ref for mobile support
 
   // Close the menu if the user clicks outside of it
   useEffect(() => {
@@ -53,18 +53,18 @@ function Header() {
           !(registrationDropdownRef.current as HTMLElement).contains(event.target as Node)) {
         setIsRegistrationOpen(false);
       }
-      if (supportDropdownRef.current && 
-          !(supportDropdownRef.current as HTMLElement).contains(event.target as Node)) {
-        setIsSupportOpen(false);
-      }
+      // if (supportDropdownRef.current && 
+      //     !(supportDropdownRef.current as HTMLElement).contains(event.target as Node)) {
+      //   setIsSupportOpen(false);
+      // }
       if (mobileregistrationDropdownRef.current && 
           !(mobileregistrationDropdownRef.current as HTMLElement).contains(event.target as Node)) {
         setIsMobileRegistrationOpen(false);
       }
-      if (mobileSupportDropdownRef.current && 
-          !(mobileSupportDropdownRef.current as HTMLElement).contains(event.target as Node)) {
-        setIsMobileSupportOpen(false);
-      }
+      // if (mobileSupportDropdownRef.current && 
+      //     !(mobileSupportDropdownRef.current as HTMLElement).contains(event.target as Node)) {
+      //   setIsMobileSupportOpen(false);
+      // }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
@@ -122,7 +122,7 @@ function Header() {
         {/* Mobile Navigation */}
         <div
           ref={menuRef}
-          className={`lg:hidden fixed top-12 right-0 flex flex-col items-center justify-center w-full nav-gradient h-[calc(100vh-48px)] z-60 transition-transform duration-500 ease-in-out bg-white ${
+          className={`lg:hidden fixed top-14 lg:top-12 right-0 flex flex-col items-center justify-center w-full nav-gradient h-[calc(100vh-48px)] z-60 transition-transform duration-500 ease-in-out bg-white ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >

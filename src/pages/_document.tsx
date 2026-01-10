@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import ScrollUp from "@/components/ui/ScrollUp";
 
 export default function Document() {
   return (
@@ -61,6 +62,7 @@ export default function Document() {
         />
         <Main />
         <NextScript />
+        <ScrollUp />
       </body>
     </Html>
   );

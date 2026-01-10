@@ -4,11 +4,6 @@ import TopBanner from "@/components/ui/TopBanner";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
-interface Step {
-  title: string;
-  description: string;
-  image: string;
-}
 interface FormValues {
   countryCode: string;
   name?: string;
@@ -143,33 +138,14 @@ export default function BecomeAnAgent() {
 
     fetchCountryCode();
   }, []);
-  const steps: Step[] = [
-    {
-      title: "Quick Registration",
-      description:
-        "Fill out our <span class='font-semibold'>30-second registration form</span>. Get started with the top live streaming platforms.",
-      image: "/step-1.svg",
-    },
-    {
-      title: "Expert Consultation",
-      description:
-        "Once you submit, our team will reach out to you via WhatsApp. <span class='font-semibold'>We will help you further.</span>",
-      image: "/step-2.svg",
-    },
-    {
-      title: "Get Paid",
-      description:
-        "<span class='font-semibold'>GO LIVE</span> and engage with your audience. <span class='font-semibold'>Start earning </span> on top streaming apps with <span class='font-semibold'>Connect Agency.</span>",
-      image: "/step-3.svg",
-    },
-  ];
+
 
   return (
     <>
       <Header />
       <TopBanner
         title="Become an Agent"
-        bgImage="bg-[url('/become-live-streamer-bg.png')]"
+        bgImage="bg-[url('/become-an-agent-bg.png')]"
       />
 
       <section className="pt-10 pb-10 lg:pt-20 lg:pb-20 bg-[#f8ecee]">

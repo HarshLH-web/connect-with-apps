@@ -27,23 +27,23 @@ export default function Home() {
 
   const testimonials: TestimonialItem[] = [
     {
-      name: "Leo",
+      name: "Chinita",
       title: "Host",
-      image: "/saleja.png",
+      image: "/chinita.png",
       quote:
         "I used to think live streaming was just for fun. Then I joined Connect Agency. They shared how to turn my singing skills into a profession. Now, I have the freedom to work from anywhere. And, I am making a good amount of earnings to support my family.",
     },
     {
-      name: "Marcus",
+      name: "Lalog",
       title: "Agent",
-      image: "/saleja.png",
+      image: "/lalog.png",
       quote:
         "I always wanted to lead a team, but didn't know where to start in the streaming world. Connect Agency helped me with the strategy and support. And within months, I was managing my own successful group of hosts. It's been almost 6 months with them.",
     },
     {
-      name: "Amara",
+      name: "Ignor",
       title: "Host",
-      image: "/samridhi.png",
+      image: "/ignor.png",
       quote:
         "I used to spend hours on my phone for free, never realising that I could turn that time into a career. Connect Agency gave me the confidence to go live. Now, I&apos;m earning more than I did at my old part-time job. The agency provides great support and expert guidance.",
     },
@@ -154,14 +154,14 @@ export default function Home() {
               {services.map((service) => (
                 <div
                   key={service.title}
-                  className="max-w-96 mx-auto flex flex-col items-center justify-start text-center bg-white rounded-[24px] overflow-hidden" style={{boxShadow: "0px 5px 10px 0px #00000025"}}
+                  className="max-w-92 mx-auto flex flex-col items-center justify-start text-center bg-white rounded-[24px] overflow-hidden" style={{boxShadow: "0px 5px 10px 0px #00000025"}}
                 > 
                 <Image
                     src={service.image}
                     alt={service.title}
-                    width={500}
+                    width={1000}
                     height={500}
-                    className="w-full"
+                    className="w-full object-cover block rounded-t-[24px] h-60"
                   />
                   <div className="p-6">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2 lg:mb-2 leading-tight">
@@ -250,7 +250,7 @@ export default function Home() {
                     alt={testimonial.name}
                     width={100}
                     height={100}
-                    className="absolute top-[-50px] left-[30] border border-[#353d766f] rounded-full lg:w-28 lg:h-28"
+                    className="absolute top-[-50px] left-[30] rounded-full lg:w-28 lg:h-28"
                   />
 
                   <Image

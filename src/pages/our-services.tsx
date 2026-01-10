@@ -210,7 +210,7 @@ export default function OurServices() {
   return (
     <>
       <Header />
-      <TopBanner title="Our Services" bgImage="bg-[url('/about-bg.png')]" />
+      <TopBanner title="Our Services" bgImage="bg-[url('/our-services.png')]" />
       <section className="bg-[#F8ECEE] pt-12 pb-12 lg:pt-20 lg:pb-20">
         <div className="w-[90%] max-w-6xl mx-auto bg-[#F8ECEE]">
           <h2 className="text-2xl lg:text-4xl font-bold text-center uppercase mb-4 lg:mb-12">

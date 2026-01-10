@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Scrollbar styles start */
 ::-webkit-scrollbar {
   width: 0px;

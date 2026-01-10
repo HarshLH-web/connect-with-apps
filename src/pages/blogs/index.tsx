@@ -146,7 +146,7 @@ function Blogs() {
 
       <Header />
 
-      <TopBanner title="Blogs" bgImage="bg-[url('/about-bg.png')]" />
+      <TopBanner title="Blogs" bgImage="bg-[url('/blogs-bg.png')]" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto mt-8 lg:mt-16 mb-12 lg:mb-20 w-[90%] max-w-7xl">
         {isLoading ? (
           <p className="col-span-full text-center text-lg text-gray-600">
