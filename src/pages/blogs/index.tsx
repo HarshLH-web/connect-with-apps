@@ -1,5 +1,4 @@
 // import React from 'react'
-"use client";
 import axios from "axios";
 import { format } from "date-fns";
 import { useState, useEffect } from "react";
@@ -37,7 +36,9 @@ function Blogs() {
       try {
         setIsLoading(true);
         setError(null);
-        const response = await axios.get(`https://webpanel.store/api/connect-blogs`);
+        const response = await axios.get(
+          `https://webpanel.store/api/connect-blogs`
+        );
         if (response.status === 200) {
           const blogs = Array.isArray(response.data) ? response.data : [];
           setAllBlogs(blogs);
@@ -204,7 +205,7 @@ function Blogs() {
                       ? `${blog.coverText.substring(0, 80)}....`
                       : blog.coverText}
                   </p>
-                  <button className="bg-white hover:bg-[#DE0402] text-[#DE0402] hover:text-white border-2 transition-all duration-300 border-[#DE0402] px-4 py- rounded-full mt-3">
+                  <button className="bg-white hover:bg-[#DE0402] text-[#DE0402] hover:text-white border-2 transition-all duration-300 border-[#DE0402] px-4 py-2 rounded-full mt-3">
                     Read More
                   </button>
                 </div>
@@ -250,7 +251,6 @@ function Blogs() {
           {/* <Image src="/loading.gif" alt="Loading" className='w-16' width={1000} height={1000} /> */}
         </div>
       )}
-
 
       <hr className="w-[95%] max-w-screen-2xl mx-auto border-t border-[#DFDFDF] my-6" />
       <Footer />

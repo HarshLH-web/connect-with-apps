@@ -246,7 +246,7 @@ function Header() {
           </Link>
 
       {/* Apply Now Button */}
-      <button
+      {/* <button
         className="btn-hover text-white rounded-full font-medium "
         onClick={() => setIsMenuOpen(false)}
       >
@@ -267,7 +267,7 @@ function Header() {
               />
             </svg>
         </Link>
-      </button>
+      </button> */}
     </nav>
         </div>
 
@@ -370,7 +370,7 @@ function Header() {
 
           
           {/* Apply Now Button */}
-            <Link href="/apply-now" className="btn-hover py-2 xl:py-2 px-6 text-white rounded-full font-medium flex items-center gap-2 transition duration-300">
+            {/* <Link href="/apply-now" className="btn-hover py-2 xl:py-2 px-6 text-white rounded-full font-medium flex items-center gap-2 transition duration-300">
             Apply Now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            </Link>
+            </Link> */}
 
         </nav>
       </div>

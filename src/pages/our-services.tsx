@@ -268,7 +268,7 @@ export default function OurServices() {
               ))}
             </div>
 
-            <div className="w-full lg:w-auto min-h-full flex items-start justify-start bg-linear-to-b from-[#6372DC] to-[#353D76] rounded-3xl py-4 lg:py-8 px-8 lg:px-16 lg:relative lg:z-50">
+            <div className="w-full lg:w-auto min-h-full flex items-start justify-start bg-linear-to-b from-[#6372DC] to-[#353D76] rounded-3xl py-4 lg:py-8 px-8 lg:px-16 lg:relative lg:z-40">
               {services.map(
                 (service, index) =>
                   service.title === activeService && (
@@ -360,7 +360,7 @@ export default function OurServices() {
       </section>
 
       <section className="bg-[#F8ECEE] pt-12 pb-12 lg:py-20">
-        <p className="text-center text-base lg:text-2xl font-semibold max-w-4xl mx-auto px-4">
+        <p className="text-center text-2xl lg:text-4xl font-semibold max-w-4xl mx-auto px-4">
           One registration, unlimited access to the world&apos;s top streaming
           apps
         </p>
@@ -464,7 +464,7 @@ export default function OurServices() {
 
                     {/* Dropdown List */}
                     {open && (
-                      <div className="absolute left-0 mt-1 w-72 bg-white border border-gray-300 rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                      <div className="absolute left-0 mt-1 w-72 bg-white border border-gray-300 rounded-md shadow-lg z-40 max-h-80 overflow-y-auto">
                         {countryCodes.map((country, index) => (
                           <div
                             id={`country-option-${index}`}

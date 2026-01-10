@@ -79,7 +79,7 @@ const ConnectWithVone: NextPage = () => {
                   <div className="flex flex-wrap gap-4 mx-auto items-center justify-center mb-16 md:mb-8">
                     <button className="flex lg:flex-1 min-w-36 text-white font-semibold rounded-3xl hover:bg-[#750DBC] border bg-transparent items-center justify-center transition-all duration-300">
                       <a
-                        href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone"
+                        href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=vone"
                         className="flex items-center justify-center py-2 px-2 sm:px-4"
                       >
                         <Image
@@ -96,7 +96,7 @@ const ConnectWithVone: NextPage = () => {
                     </button>
                     <button className="flex lg:flex-1 min-w-36 text-white font-semibold rounded-3xl bg-transparent hover:bg-[#750DBC] border items-center justify-center transition-all duration-300">
                       <a
-                        href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3"
+                        href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3"
                         className="flex items-center justify-center py-2 px-2 sm:px-4"
                       >
                         <Image
@@ -125,7 +125,7 @@ const ConnectWithVone: NextPage = () => {
           </p>
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 items-center justify-center">
             <a
-              href="https://static.vshowapi.com/inviteNew/share/?c=poppo&link_id=8096911&user_id=63534458&temp_type=1&sys_temp_id=1"
+              href="https://static.vshowapi.com/inviteNew/share/?c=poppo&link_id=8096911&user_id=29828616&temp_type=1&sys_temp_id=1"
               aria-label="Get Vone App"
               className="bg-transparent font-semibold text-white hover:bg-blue-700 transition-all duration-300 px-4 lg:px-6 py-[6px] rounded-full border border-white flex items-center gap-2"
             >
@@ -139,7 +139,7 @@ const ConnectWithVone: NextPage = () => {
               Get Poppo
             </a>
             <a
-              href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=poppo"
+              href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo"
               aria-label="Get Vone App"
               className="bg-white text-black font-semibold hover:bg-transparent hover:text-white transition-all duration-300 px-4 lg:px-6 py-[6px] rounded-full border border-white flex items-center gap-2"
             >
@@ -189,7 +189,7 @@ const ConnectWithVone: NextPage = () => {
             <div className="flex items-center justify-center flex-wrap pb-24 xl:pb-36 2xl:pb-44">
               <button className="text-blue-700 border-2 border-blue-600 font-bold py-2 rounded-[45px] m-2 btn hover:text-white hover:bg-blue-600 transition-all duration-300">
                 <a
-                  href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
+                  href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3 "
                   className="py-2 px-6"
                 >
                   DOWNLOAD
@@ -197,7 +197,7 @@ const ConnectWithVone: NextPage = () => {
               </button>
               <button className="text-blue-700 border-2 border-blue-600 btn font-bold py-2 rounded-[45px] m-2 hover:text-white hover:bg-blue-600 transition-all duration-300">
                 <a
-                  href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone"
+                  href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=vone"
                   className="py-2 px-6"
                 >
                   APPLY NOW
@@ -221,7 +221,7 @@ const ConnectWithVone: NextPage = () => {
                 <ul className="text-left list-decimal pl-4 text-[1rem] leading-tight md:text-lg space-y-1">
                   <li  >
                       <a
-                        href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
+                        href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3 "
                         className="underline text-blue-700 font-semibold"
                       >
                         Download the Vone App
@@ -238,7 +238,7 @@ const ConnectWithVone: NextPage = () => {
                   <li  >
                   Click on the
                       <a
-                        href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone"
+                        href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=vone"
                         className="underline text-blue-700 font-semibold"
                       >
                         Agency Registration Link
@@ -276,7 +276,7 @@ const ConnectWithVone: NextPage = () => {
                 </p>
                 <button className="flex w-fit mt-4 ml-2 text-blue-600 font-semibold rounded-[50px] border-blue-600 border-2 bg-transparent items-center justify-center mb-2 hover:bg-blue-600 hover:text-white transition-all duration-300">
                   <a
-                    href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone"
+                    href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=vone"
                     className="py-2 px-6 rounded-[50px]"
                   >
                     Become Vone Agent
@@ -319,7 +319,7 @@ const ConnectWithVone: NextPage = () => {
                 <li>
                   {" "}
                   <a
-                    href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
+                    href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3 "
                     className="underline font-semibold"
                   >
                     Download the Vone App
@@ -331,7 +331,7 @@ const ConnectWithVone: NextPage = () => {
                   profile options.
                 </li>
                 <li>
-                  Enter Agent ID <strong>&apos;63534458&apos;</strong> &amp; Apply to join
+                  Enter Agent ID <strong>&apos;29828616&apos;</strong> &amp; Apply to join
                   the agency.
                 </li>
               </ul>
@@ -354,7 +354,7 @@ const ConnectWithVone: NextPage = () => {
                 <li>
                   {" "}
                   <a
-                    href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
+                    href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3 "
                     className="underline font-semibold"
                   >
                     Download the Vone App
@@ -454,7 +454,7 @@ const ConnectWithVone: NextPage = () => {
           <div className="flex justify-center mt-2">
             <button className="flex w-fit mt-4 text-blue-600 font-semibold rounded-[50px] border-blue-600 border-2 bg-transparent items-center justify-center mb-2 hover:bg-blue-600 hover:text-white transition-all duration-300">
               <a
-                href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=63534458&temp_type=1&sys_temp_id=3 "
+                href="https://static.vshowapi.com/inviteNew/share/?c=vone&link_id=370107&user_id=29828616&temp_type=1&sys_temp_id=3 "
                 className="py-2 px-6 rounded-[50px]"
               >
                 Become Vone Host
@@ -722,11 +722,11 @@ const ConnectWithVone: NextPage = () => {
                 Coin Seller
               </p>
               <ul className="list-disc px-6 text-[1rem] leading-tight md:text-lg space-y-1 py-4">
-                <li>
+                <li style={{ color: "#ffffff" }}>
                   A minimum of 5 active hosts with maintaining 6 hours of weekly
                   live-streaming.
                 </li>
-                <li>
+                <li style={{ color: "#ffffff" }}>
                   Recharge or exchange coins of $2000 in one transaction and
                   store them in the account.
                 </li>
@@ -735,7 +735,7 @@ const ConnectWithVone: NextPage = () => {
                   <span className="px-4 font-semibold">OR</span>
                   <hr className="reverse-gradient-hr w-32" />
                 </div>
-                <li>
+                <li style={{ color: "#ffffff" }}>
                   Recharge or exchange coins of $6000 in one transaction and
                   store them in the account.
                 </li>
@@ -743,7 +743,7 @@ const ConnectWithVone: NextPage = () => {
             </div>
           </div>
           <p className="text-center text-base lg:text-2xl mt-4 lg:mt-16 font-semibold underline">
-            <a href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=63534458&c=vone">
+            <a href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=vone">
               Register as Vone Agency to become a Voin Coin Seller
             </a>
           </p>
@@ -999,7 +999,7 @@ const ConnectWithVone: NextPage = () => {
         <div className="w-[90%] mx-auto max-w-7xl pt-4 lg:pt-6 pb-4 lg:pb-6">
           <div className="flex flex-col md:flex-row items-center my-auto justify-between">
             <div className="">
-              <Image src="/logo.png" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
+              <Image src="/logo.svg" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
             </div>
             <div className="text-left text-black flex flex-col md:flex-row gap-3">
               <Link href="/privacy-policy" className="text-sm text-gray-600">Privacy Policy</Link>

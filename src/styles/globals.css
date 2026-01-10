@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Scrollbar styles start */
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* Scrollbar styles end */
+
+
 /* Button component styles start */
 .btn-hover:hover {
   background-position: 0% 100%;
