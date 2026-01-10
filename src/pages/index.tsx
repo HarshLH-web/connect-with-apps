@@ -255,7 +255,7 @@ export default function Home() {
                     alt={testimonial.name}
                     width={100}
                     height={100}
-                    className="absolute top-[-50px] left-[30] rounded-full lg:w-28 lg:h-28"
+                    className="absolute top-[-30px] left-[30] rounded-full w-20 h-20"
                   />
 
                   <Image

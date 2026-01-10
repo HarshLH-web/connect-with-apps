@@ -197,10 +197,10 @@ function Header() {
 
       <div className="h-px w-48 bg-gray-300"></div>
 
-      <Link href="/blogs" className="text-base hover:text-gray-400 font-medium" onClick={() => setIsMenuOpen(false)}>
+      {/* <Link href="/blogs" className="text-base hover:text-gray-400 font-medium" onClick={() => setIsMenuOpen(false)}>
         Blogs
       </Link>
-      <div className="h-px w-48 bg-gray-300"></div>
+      <div className="h-px w-48 bg-gray-300"></div> */}
 
       {/* Support Dropdown */}
       {/* <div className="group relative text-base hover:text-gray-400 font-medium" ref={mobileSupportDropdownRef}>
@@ -325,11 +325,11 @@ function Header() {
             </div>
           </div>
           <div className="h-6 w-px bg-[#353d7688]"></div>
-          <Link href="/blogs" className={`text-base font-medium relative group transition-all duration-300 ${pathname === '/blogs' ? 'text-[#000000]' : 'text-[#7b7b7b]'}`}>
+          {/* <Link href="/blogs" className={`text-base font-medium relative group transition-all duration-300 ${pathname === '/blogs' ? 'text-[#000000]' : 'text-[#7b7b7b]'}`}>
             <span>Blogs</span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#353D76] group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <div className="h-6 w-px bg-[#353d7688]"></div>
+          <div className="h-6 w-px bg-[#353d7688]"></div> */}
           {/* Support Dropdown */}
           {/* <div className="group relative text-base font-medium" ref={supportDropdownRef}>
             <button onClick={() => setIsSupportOpen(!isSupportOpen)} className="flex items-center relative group transition-all duration-300 text-[#7b7b7b] hover:text-[#000000]">
