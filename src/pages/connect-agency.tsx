@@ -176,7 +176,7 @@ export default function ConnectAgency() {
           </div>
         </section>
 
-        <section id="agency" className="scroll-mt-16 pt-12 pb-12 px-4">
+        <section id="registration" className="scroll-mt-16 pt-12 pb-12 px-4">
           <div className="h-fit bg-white">
             <div className="mx-auto max-w-[1250px]">
               <div className="flex flex-col md:flex-row items-center justify-center my-auto">
