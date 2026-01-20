@@ -106,7 +106,7 @@ function Footer() {
         <Image src="/logo.svg" alt="Connect With Apps" className="w-42 lg:w-52" width={200} height={200} />
         <div className='w-px h-8 bg-black/25 hidden lg:block'></div>
             <p className="text-sm text-gray-900 hidden lg:block">
-            &copy; 2026 Connect With Apps. All rights reserved.
+            &copy; 2025 Connect With Apps. All rights reserved.
             </p>
         </div>
         <div className="flex items-center gap-2 lg:gap-4">
@@ -116,7 +116,7 @@ function Footer() {
             <Image src="/yt.svg" alt="YouTube" className="w-6 h-6" width={20} height={20} />
         </div>
         <p className="text-xs text-gray-900 block lg:hidden">
-            &copy; 2026 Connect With Apps. All rights reserved.
+            &copy; 2025 Connect With Apps. All rights reserved.
             </p>
       </div>
     </footer>
