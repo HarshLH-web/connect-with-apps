@@ -150,7 +150,7 @@ function Support() {
         />
         <meta
           name="keywords"
-          content="LH Talent - Customer Support, Connect With Apps - Contact Number"
+          content="Connect - Customer Support, Connect With Apps - Contact Number"
         />
         {/* <!-- Facebook Meta Tags --> */}
         <meta

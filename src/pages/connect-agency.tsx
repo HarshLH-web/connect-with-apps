@@ -242,7 +242,7 @@ export default function ConnectAgency() {
                         complete the Poppo Agency Registration Application
                       </li>
                       <li className="text-[1rem] leading-tight md:text-lg text-left">
-                        Inform <span className="font-semibold">LH Talent Agency for Priority Process.</span> WhatsApp us your{" "}
+                        Inform <span className="font-semibold">Connect Agency for Priority Process.</span> WhatsApp us your{" "}
                         <span className="font-semibold">Poppo ID</span> for immediate approval
                         on{" "}
                         <a
