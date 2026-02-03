@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const AppsAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(1); // POPPO expanded by default
+  const [activeIndex, setActiveIndex] = useState(2); // POPPO expanded by default
   // const [isMobile, setIsMobile] = useState(false);
 
   const toggleAccordion = (index: number) => {
@@ -34,6 +34,20 @@ const AppsAccordion = () => {
         "https://h5.schamet.com/webH5/inviteAgent/bind.html?companyId=3338",
       bgimg: "/our-apps/chamet-bg.webp",
       imgUrl: "/our-apps/Chamet-Live.webp",
+    },
+    {
+      title: "TAKA LIVE",
+      heading: "TAKA LIVE",
+      description:
+        "A fun, engaging application for real-time interactions on video streaming platforms.",
+      hostBtnText: "Download Taka Live",
+      hostBtnURL:
+        "https://os8.me/Hwi33i",
+      agentBtnText: "Become Taka Agent",
+      agentBtnURL:
+        "https://os8.me/CCyaYf",
+      bgimg: "/our-apps/taka-bg.png",
+      imgUrl: "/our-apps/taka-logo.webp",
     },
     {
       title: "POPPO LIVE",
@@ -67,18 +81,18 @@ const AppsAccordion = () => {
       imgUrl: "/our-apps/Niki-live.webp",
     },
     {
-      title: "JOYO LIVE",
-      heading: "JOYO LIVE",
+      title: "CRUSH LIVE",
+      heading: "CRUSH LIVE",
       description:
-        "A fun, engaging application for real-time interactions on video streaming platforms.",
-      hostBtnText: "Download Joyo Live",
+        "A streaming app with video calling features.",
+      hostBtnText: "Download Crush Live",
       hostBtnURL:
-        "https://joyo.go.link?adj_t=1p4hrtnk&deep_link=joyo%3A%2F%2Finvite%3FinviteCode%3D900248693",
-      agentBtnText: "Become Joyo Agent",
+        "https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1",
+      agentBtnText: "Become Crush Agent",
       agentBtnURL:
-        "https://h5.joyoshow.com/applyinvatefamily?user_id=900248693",
-      bgimg: "/our-apps/joyo-bg.png",
-      imgUrl: "/our-apps/joyo-logo.png",
+        "https://invite.crushfun.live/agent?invitationCode=TZXQGL5F",
+      bgimg: "/our-apps/crush-bg.webp",
+      imgUrl: "/our-apps/crush-logo2.png",
     },
   ];
 
@@ -86,7 +100,7 @@ const AppsAccordion = () => {
     <div className="w-full lg:w-[80%] max-w-4xl mx-auto px-2 py-12">
       <div
         id="accordion"
-        className="flex flex-col gap-2 items-stretch h-180 md:h-120 lg:h-160 overflow-hidden"
+        className="flex flex-col gap-2 items-stretch h-180 md:h-180 lg:h-180 overflow-hidden"
       >
         {sections.map((section, index) => (
           <div
@@ -119,12 +133,12 @@ const AppsAccordion = () => {
                 alt={`${section.title} - Logo`}
                 width={65}
                 height={65}
-                className={`h-12 w-12 md:h-12 md:w-12 rounded-2xl md:rounded-full absolute left-5 bottom-[18px] lg:bottom-[13px] lg:left-4 transition-all delay-0 duration-100 ${
+                className={`h-12 w-12 md:h-12 md:w-12 rounded-full md:rounded-full absolute left-5 bottom-[14px] md:bottom-[7px] lg:bottom-[13px] lg:left-4 transition-all delay-0 duration-100 ${
                   activeIndex === index ? "opacity-0" : "opacity-100"
                 }`}
               />
               <h3
-                className={`text-2xl md:text-[26px] text-black font-semibold whitespace-nowrap tracking-wide transition-all duration-0 absolute left-20 bottom-[25px] lg:bottom-5 lg:left-22 ${
+                className={`text-2xl md:text-[26px] text-black font-semibold whitespace-nowrap tracking-wide transition-all duration-0 absolute left-20 bottom-[22px] md:bottom-[13px] lg:bottom-5 lg:left-22 ${
                   activeIndex === index ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -136,7 +150,7 @@ const AppsAccordion = () => {
                 alt="Arrow Right"
                 width={30}
                 height={30}
-                className={`absolute right-6 bottom-[28px] lg:bottom-6 lg:right-5 transition-all delay-0 duration-100
+                className={`absolute right-6 bottom-[22px] md:bottom-[17px] lg:bottom-6 lg:right-5 transition-all delay-0 duration-100
                   ${activeIndex === index ? "opacity-0" : "opacity-100"}`}
               />
 
