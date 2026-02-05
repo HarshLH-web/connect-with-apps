@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+// import Header from "@/components/layout/Header";
+import PoppoHeader from "@/components/layout/PoppoHeader";
+// import Footer from "@/components/layout/Footer";
 
 export default function ConnectAgency() {
   return (
@@ -32,7 +33,7 @@ export default function ConnectAgency() {
         <link rel="canonical" href="https://connectwithapps.com/connectagency" />
       </Head>
 
-      <Header />
+      <PoppoHeader />
 
       <main>
         <div
