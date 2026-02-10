@@ -1,11 +1,109 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 // import Header from "@/components/layout/Header";
 import PoppoHeader from "@/components/layout/PoppoHeader";
 // import Footer from "@/components/layout/Footer";
 
+interface ConnectWithPoppoFormValues {
+  name: string;
+  email: string;
+  phone: string;
+  country: string;
+   app_id: string;
+   role: string;
+}
+
 export default function ConnectAgency() {
+  const [formValues, setFormValues] = useState<ConnectWithPoppoFormValues>({
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
+    app_id: "connectwithpoppo",
+    role: "host",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState<string | null>(null);
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ): void => {
+    const { name, value } = e.target;
+    setFormValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError(null);
+    setSubmitSuccess(null);
+
+    try {
+      // Get IP address (best-effort, non-blocking if it fails)
+      let ipAddress = "";
+      try {
+        const ipRes = await fetch("https://api.ipify.org?format=json");
+        if (ipRes.ok) {
+          const ipData: { ip: string } = await ipRes.json();
+          ipAddress = ipData.ip;
+        }
+      } catch {
+        ipAddress = "";
+      }
+
+      const payload = {
+        name: formValues.name,
+        email: formValues.email,
+        phone: formValues.phone,
+        app_id: formValues.app_id,
+        role: formValues.role,
+        country: formValues.country,
+        website_link: "https://connectwithpoppo.com/connect-with-poppo",
+        ip_address: ipAddress,
+      };
+
+      const response = await fetch(
+        "https://webpanel.store/api/connect-PoppoData",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setSubmitSuccess(
+        "Thank you for applying! We will contact you soon on your registered details."
+      );
+      setFormValues({
+        name: "",
+        email: "",
+        phone: "",
+        country: "",
+        app_id: "connectwithpoppo",
+        role: "host",
+      });
+    } catch (error) {
+      console.error("Error submitting connect-with-poppo form:", error);
+      setSubmitError("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -270,6 +368,162 @@ export default function ConnectAgency() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Registration Form Section */}
+        <section className="bg-white py-12 px-4">
+          <div className="max-w-3xl mx-auto rounded-3xl border border-[#DFDFDF] bg-linear-to-b from-[#FEFEFC] to-[#F9F6E3] px-4 py-8 md:px-8 md:py-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
+              Connect With Poppo Live
+            </h2>
+            <p className="text-center text-sm md:text-base text-[#333333] mb-6 max-w-2xl mx-auto">
+              Share your details below to apply as a Poppo Live host. Our team
+              will review your application and get in touch with you shortly.
+            </p>
+
+            {submitSuccess && (
+              <p className="mb-4 text-sm md:text-base text-green-700 text-center bg-green-50 border border-green-200 rounded-full px-4 py-2">
+                {submitSuccess}
+              </p>
+            )}
+
+            {submitError && (
+              <p className="mb-4 text-sm md:text-base text-red-700 text-center bg-red-50 border border-red-200 rounded-full px-4 py-2">
+                {submitError}
+              </p>
+            )}
+
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6"
+            >
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  Full Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  value={formValues.name}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formValues.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  WhatsApp Number (with country code)
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formValues.phone}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                  placeholder="+91XXXXXXXXXX"
+                />
+              </div>
+
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="country"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  Country
+                </label>
+                <input
+                  id="country"
+                  name="country"
+                  type="text"
+                  value={formValues.country}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                  placeholder="Enter your country"
+                />
+              </div>
+
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="app_id"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  App ID
+                </label>
+                <input
+                  id="app_id"
+                  name="app_id"
+                  type="number"
+                  value={formValues.app_id}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                  placeholder="Enter app id"
+                />
+              </div>
+
+              <div className="md:col-span-1">
+                <label
+                  htmlFor="role"
+                  className="block text-sm font-medium text-gray-800 mb-1"
+                >
+                  Role
+                </label>
+                <select
+                  id="role"
+                  name="role"
+                  value={formValues.role}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full rounded-full border border-[#DFDFDF] px-4 py-2 text-sm md:text-base focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent bg-white"
+                >
+                  <option value="host">Host</option>
+                  <option value="agency">Agency</option>
+                  <option value="coin_seller">Coin Seller</option>
+                </select>
+              </div>
+
+              <div className="md:col-span-2 flex justify-center mt-2">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="min-w-[180px] rounded-full bg-linear-to-r from-[#E514F0] to-[#000899] text-white px-6 py-2 text-sm md:text-base font-semibold border-2 border-[#E514F0] hover:bg-white hover:text-[#E514F0] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Application"}
+                </button>
+              </div>
+            </form>
           </div>
         </section>
 
