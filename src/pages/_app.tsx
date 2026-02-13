@@ -55,6 +55,15 @@ export default function App({ Component, pageProps }: AppProps) {
           })(window,document,'script','dataLayer','GTM-PZ26KTWS');
         `}
       </Script>
+
+      <Script
+      strategy="afterInteractive"
+      type="text/javascript"
+      src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+      id="aisensy-wa-widget"
+      widget-id="aaay3m"
+      >
+      </Script>
     <div className={poppins.className}>
       <Component {...pageProps} />
     </div>
