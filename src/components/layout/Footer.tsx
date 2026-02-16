@@ -27,16 +27,16 @@ function Footer() {
           <p className="text-2xl font-bold mb-2 lg:mb-4">Contact Us</p>
           {/* <div className="w-8 h-0.5 bg-black ml-2 mb-4"></div> */}
         <div className="flex flex-col gap-2 lg:gap-3 h-full">
-            <div className="flex items-center gap-2">
+            <a href="https://api.whatsapp.com/send/?phone=919650889239&text&type=phone_number&app_absent=0" className="flex items-center gap-2">
                     <Image src="/whatsapp.svg" alt="whatsapp" className="w-6 h-6" width={20} height={20} />
-                    <p className="text-gray-900 flex items-start gap-2">+91 8448877709</p>
-            </div>
+                    <p className="text-gray-900 flex items-start gap-2">+91 9650889239</p>
+            </a>
 
             
-            <div className="flex items-center gap-2">
+            <a href="mailto:support@connectwithapps.com" className="flex items-center gap-2">
                 <Image src="/mail.svg" alt="Email" className="w-6 h-6" width={20} height={20} />
                 <p className="text-gray-900 flex items-start gap-2">support@connectwithapps.com</p>
-            </div>
+            </a>
             
             <div className="flex items-start gap-2">   
                 <Image src="/location.svg" alt="Phone" className="w-6 h-6" width={20} height={20} />
