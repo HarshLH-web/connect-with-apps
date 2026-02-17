@@ -346,11 +346,11 @@ export default function ConnectAgency() {
                         on{" "}
                         <a
                           className="text-blue-700 underline font-semibold"
-                          href="https://api.whatsapp.com/send/?phone=917065384660&text&type=phone_number&app_absent=0"
+                          href="https://api.whatsapp.com/send/?phone=919650889239&text&type=phone_number&app_absent=0"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          +917065384660.
+                          +919650889239.
                         </a>{" "}
                         You can refer to the images above for a better
                         understanding of the registration process.
@@ -690,7 +690,7 @@ export default function ConnectAgency() {
           </p>
           <p className="text-center text-black text-base lg:text-xl border-y border-black my-2 py-2 lg:w-max mx-auto">
             Ask hosts to register and enter your Agent ID or contact via
-            WhatsApp: +917065384660
+            WhatsApp: +919650889239
           </p>
           <p className="text-center text-black text-base lg:text-xl">
             Ensure proper onboarding and compliance support for your hosts.
