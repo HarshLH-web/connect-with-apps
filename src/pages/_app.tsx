@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       {/* Google Ads Conversion */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17726157177"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17887280691"
         strategy="afterInteractive"
       />
       <Script id="ads-script" strategy="afterInteractive">
@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-17726157177');
+          gtag('config', 'AW-17887280691');
         `}
       </Script>
 
