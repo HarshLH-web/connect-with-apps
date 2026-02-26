@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Link from "next/link";
@@ -6,7 +7,16 @@ import Link from "next/link";
 const ConnectWithVone: NextPage = () => {
   return (
     <>
-    <Header />
+      <Head>
+        <title>Connect With Vone | Live Streaming Agency</title>
+        <meta
+          name="description"
+          content="Connect with Vone - a global live-streaming app. Register as agency or download the app and start your talent journey."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://connectwithapps.com/connect-with-vone" />
+      </Head>
+      <Header />
       <div
         className="fixed bottom-8 left-8 z-100 opacity-0 transform translate-y-6 transition-all duration-500 ease-out mix-blend-luminosity"
         id="scrollTopBtnContainer"
