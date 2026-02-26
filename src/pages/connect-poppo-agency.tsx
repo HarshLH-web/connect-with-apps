@@ -529,13 +529,18 @@ export default function ConnectPoppoAgency() {
           </h3>
           <p className="text-sm lg:text-base text-gray-800 text-center">
             <span className="font-semibold">Connect Agency</span> is an
-            independent talent management company (not owned by or affiliated
-            with Poppo Live). Poppo Live is operated by its own platform
+            independent talent management company operated by <span className="font-semibold">Connect Tech</span> and is not owned by or affiliated
+            with Poppo Live. Poppo Live is operated by its own platform
             provider. We only offer recruitment guidance, onboarding assistance,
             and compliance support for prospective Poppo Live agents and hosts.
             We do not guarantee approvals, earnings, or placements—results
             depend on the platform&apos;s policies and individual performance.
           </p>
+
+          <p className="text-sm lg:text-base text-gray-800 text-center mt-4">Address: Omaxe Green Meadow City Bhiwadi, Rajasthan 301019</p>
+
+<p className="text-sm lg:text-base text-gray-800 text-center mt-2">Contact: <a href="https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0" className="text-blue-600 underline">+91 8448877709</a></p>
+<p className="text-sm lg:text-base text-gray-800 text-center">Email: <a href="mailto:support@connectwithapps.com" className="text-blue-600 underline">support@connectwithapps.com</a></p>
         </section>
 
         <footer className="w-[95%] mx-auto lg:px-16 py-6 border-t border-[#0000002d]">

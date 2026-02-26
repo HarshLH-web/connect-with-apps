@@ -988,7 +988,7 @@ const ConnectWithVone: NextPage = () => {
             Transparency &amp; Platform Independence
           </h3>
           <p className="text-sm text-gray-600">
-            Connect with apps is an independent talent management company and is
+            Connect with apps is an independent talent management company operated by <span className="font-semibold">Connect Tech</span> and is
             not owned by or affiliated with the Vone App platform. Vone App is
             operated by its own provider. We offer coaching, recruitment
             guidance, and compliance support only; we do not guarantee
@@ -996,10 +996,10 @@ const ConnectWithVone: NextPage = () => {
             solely by the platform and depend on performance and policy
             compliance.<br /><br />
             Address: Omaxe Green Meadow City Bhiwadi, Rajasthan 301019
-            <br />          </p>
-            Contact: <a href="https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0">+91 8448877709</a>
+            <br /></p>
+            Contact: <a href="https://api.whatsapp.com/send/?phone=8448877709&text&type=phone_number&app_absent=0" className="text-blue-600 underline">+91 8448877709</a>
             <br />
-            Email: <a href="mailto:support@connectwithapps.com">support@connectwithapps.com</a>
+            Email: <a href="mailto:support@connectwithapps.com" className="text-blue-600 underline">support@connectwithapps.com</a>
 
         </div>
       </section>
