@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <footer className="bg-[#ffffff] text-black pt-10 pb-5">
-      <div className="w-full lg:w-full max-w-360 mx-auto flex flex-col lg:flex-row lg:justify-center gap-8 px-6 lg:px-0 xl:px-6">
+      <div className="w-full lg:w-full max-w-360 mx-auto flex flex-col lg:flex-row lg:justify-around gap-8 px-6 lg:px-0 xl:px-6">
         {/* Contact Section - First on mobile */}
         <div className='order-1 lg:order-3 lg:pb-12 lg:w-[30%] xl:w-[25%]'>
         <div className="">
@@ -82,22 +82,17 @@ function Footer() {
         </div>
 
         {/* Blog Links Section - Third on mobile */}
-        <div className="order-3 lg:order-2 pb-12 whitespace-nowrap xl:pl-12 lg:w-[30%]">
+        {/* <div className="order-3 lg:order-2 pb-12 whitespace-nowrap xl:pl-12 lg:w-[30%]">
           <p className="text-2xl font-semibold mb-2 lg:mb-4">Blog</p>
-          {/* <div className="w-6 h-0.5 bg-white mx-2 mb-4"></div> */}
 
           <div className="space-y-1.5 flex flex-col lg:max-w-[80%]">
               <Link href="/blogs/tango-agency-registration" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Tango Agency Registration</Link>
-              {/* <div className="h-px bg-[#242424]"></div> */}
               <Link href="/blogs/become-poppo-live-host-and-earn-money" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to earn money on Poppo Live</Link>
-              {/* <div className="h-px bg-[#242424]"></div> */}
               <Link href="/blogs/how-poppo-app-agency-earn-money" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Agent Commission</Link>
-              {/* <div className="h-px bg-[#242424]"></div> */}
               <Link href="/blogs/joyo-live-agency" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Joyo Live Agency Registration</Link>
-              {/* <div className="h-px bg-[#242424]"></div> */}
               <Link href="/blogs/how-to-trade-coins-in-poppo-live" className="text-gray-900 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Coin Seller</Link>
-            </div>
-        </div>
+          </div>
+        </div> */}
       </div>
 
       {/* Copyright and Social Links - Last on both mobile and desktop */}
